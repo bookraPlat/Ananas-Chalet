@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./header.css" >
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./experience.css">
+    <link rel="stylesheet" href="./Booking-page.css">
+    <link rel="stylesheet" href="./pos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananas | Chalet</title>
+</head>
+<body class="body">
+
+<!--Header-->
+    <header class="header">
+
+        <div class="header-items-container">
+
+
+
+
+         <!--Left Side Header-->
+         <a class="header-left-box" href="index.html">
+            <div class="logo-mask"><img src="ImagesFolder/Logo.png" alt="Logo-Ananas" class="header-logo" loading="lazy"></div>
+            <div class="name-mask"><div class="name english" >Ananas</div></div>
+         </a>     
+
+
+
+
+         <!--Right Side Header-->
+         <div class="header-right-box">
+
+            <button class="language language-animation" onclick="
+                
+                switchLanguage();
+                ">ع</button>
+
+
+
+            </div>
+
+
+         </div>
+
+        </div>
+
+                                        <!--Hamburger Menu-Comin Soon-->
+
+        </div>
+
+
+
+    </header> 
+
+
+
+
+
+
+
+
+
+
+<!--Booking Section-->
+<section class="booking-section">
+
+
+
+
+        <!--Introduction Section-->
+        <div class="booking-introduction">
+            <p class="booking-introduction-title">
+                You Will Get A Call Today!
+            </p>
+            <p class="booking-introduction-description" >
+                To inform you about the service and confirm the booking. 
+                Answer these questions to make it as productive as possible!
+            </p>
+        </div>
+
+
+
+
+          <!--Form Section-->
+          <form action="the-thank-you-page.html" class="booking-form">
+                
+                <div class="booking-form-inputs-container">
+
+
+
+
+
+                <!--Service Pick Section-->
+                <div class="service-pick-container">
+                        <label class="service-pick-title service-pick-title-translate" for="#service-pick">Pick a service</label>
+                        <div class="service-pick  service-types-container">
+                        <div class="service-pick-option1" onclick="
+                            let service = document.querySelector('.service-pick-option1');
+                            let itsContainer = document.querySelector('.service1-based-container');
+                            serviceSelection(service , itsContainer);">
+                        
+                        <div class="option1-items-container Ananas-triple-container"><img src="ImagesFolder/chalet-stay-icon.png" class="option1-icon"> Ananas Triple</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                
+            
+                        </div>
+                        <div class="service-pick-option2" onclick="
+                        
+                        service = document.querySelector('.service-pick-option2');
+                        itsContainer = document.querySelector('.service2-based-container');
+                        serviceSelection(service , itsContainer);">
+                        <div class="option1-items-container  custom-booking-container"><img src="ImagesFolder/custom-booking-icon.PNG" class="option1-icon"> Custom Booking</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                    
+                        </div>
+
+                        <div class="service-pick-option3"
+                        onclick="
+                            service = document.querySelector('.service-pick-option3');
+                            itsContainer = document.querySelector('.service3-based-container');
+                            serviceSelection(service , itsContainer);">
+                        
+                        
+                        <div class="option1-items-container  discovery-visit-container"><img src="ImagesFolder/discovery-visit-icon.png" class="option1-icon"> Discovery Visit</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                        </div>
+                    </div>
+
+                    <p class="service-pick-description">Different pricing depends on packages and specific needs you may have. 
+                        which will be discussed in our call.</p>
+
+
+                </div>
+
+                
+
+
+
+                    <!--Starter Inputs Section-->
+                    <div class="input-wrapper fullname-wrapper">
+                        
+                        <input type="text" class="fullname-input text-input" id="fullname-input" placeholder="Full Name (Personal)"  required    id="fullname-input" autocomplete="off">
+                        <label for="fullname-input" class="fullname-input-label label-off">Full Name (Personal)</label>
+
+                    </div>
+
+                    <div class="phone-number-input-wrapper phone-number-wrapper">
+                        
+                        <input type="tel" class="use-input-phone-number text-input" id="use-input-phone-number" placeholder="Phone Number"  required    id="use-input-phone-number" autocomplete="off">
+                        <label for="use-input-phone-number" class="use-input-phone-number-label label-off">Phone Number</label>
+
+                    </div>
+
+
+
+
+
+                    <!--Service Based Section 1-->
+                    <div class="service1-based-container service-based-container-off">
+
+
+
+                    </div>
+
+
+
+                    <!--Service Based Section 2-->
+                    <div class="service2-based-container service-based-container-off" >                    
+
+
+
+
+                    </div>
+
+
+
+
+
+                    <!--Service Based Section 3-->
+                    <div class="service3-based-container service-based-container-off" >
+
+
+                    </div>
+
+                    <div class="amount-of-nights-wrapper">
+                    <label class="amount-of-nights-title" for="#amount-of-nights">Number Of Nights Wanted</label>
+                    <div class="amount-of-nights aof-dropdown">
+
+
+                       
+
+                    </div>
+                    </div>
+
+
+
+
+                    <div class="amount-of-visitors-wrapper form-input" data-value="visitorAmount">
+                        
+                    <label class="custom-dropdown-title custom-dropdown-title-translate" for="#custom-dropdown">Total Number Of People</label>
+                    <div class="custom-dropdown  form-input" onclick="
+                    "> 
+                    </div>
+                    
+                    </div>
+
+                    <div class="family-check-wrapper form-input">
+                    <label class="family-check-dropdown-title" for="#family-check-dropdown">Are You a Family?</label>
+                    <div class="family-check-dropdown">
+
+
+                       
+
+                    </div>
+                    </div>
+
+
+
+
+
+
+<!--Date and Time Pick Section-->
+<label for="date-and-time" class="specify-date-label date-label-title date-time-translate">Specify a date & time</label>
+
+<div class="booking-date-and-time-wrapper" >
+    <div class="booking-date-and-time-container">
+                                  <button class="booking-calendar-button" onclick="toggleCalendar();         
+                                  const dateLabel = document.querySelector('.date-label-title');
+                                  dateLabel.classList.replace('specify-date-label' , 'specify-date-label-valid');" type="button">
+        <strong class="calendar-button-day"></strong>
+    </button>
+
+
+
+
+
+    <!--Calendar Section-->
+    <div class="booking-calendar-off">
+
+        <div class="booking-calendar-header">
+            <p class="days-of-week">S</p>
+            <p class="days-of-week">S</p>
+            <p class="days-of-week">M</p>
+            <p class="days-of-week">T</p>
+            <p class="days-of-week">W</p>
+            <p class="days-of-week">T</p>
+            <p class="days-of-week">F</p>
+        </div>
+        <div class="booking-calendar-body">
+
+            <!-- October 2025 (starts on Wednesday) -->
+            <div class="month-container">
+                <div class="bcb-header October">
+                    <p class="month">October</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body October">
+                    <p class="days" style="grid-column: 5;" data-month="October" data-day="Wednesday">1</p>
+                    <p class="days" data-month="October" data-day="Thursday">2</p>
+                    <p class="days" data-month="October" data-day="Friday">3</p>
+                    <p class="days" data-month="October" data-day="Saturday">4</p>
+                    <p class="days" data-month="October" data-day="Sunday">5</p>
+                    <p class="days" data-month="October" data-day="Monday">6</p>
+                    <p class="days" data-month="October" data-day="Tuesday">7</p>
+                    <p class="days" data-month="October" data-day="Wednesday">8</p>
+                    <p class="days" data-month="October" data-day="Thursday">9</p>
+                    <p class="days" data-month="October" data-day="Friday">10</p>
+                    <p class="days" data-month="October" data-day="Saturday">11</p>
+                    <p class="days" data-month="October" data-day="Sunday">12</p>
+                    <p class="days" data-month="October" data-day="Monday">13</p>
+                    <p class="days" data-month="October" data-day="Tuesday">14</p>
+                    <p class="days" data-month="October" data-day="Wednesday">15</p>
+                    <p class="days" data-month="October" data-day="Thursday">16</p>
+                    <p class="days" data-month="October" data-day="Friday">17</p>
+                    <p class="days" data-month="October" data-day="Saturday">18</p>
+                    <p class="days" data-month="October" data-day="Sunday">19</p>
+                    <p class="days" data-month="October" data-day="Monday">20</p>
+                    <p class="days" data-month="October" data-day="Tuesday">21</p>
+                    <p class="days" data-month="October" data-day="Wednesday">22</p>
+                    <p class="days" data-month="October" data-day="Thursday">23</p>
+                    <p class="days" data-month="October" data-day="Friday">24</p>
+                    <p class="days" data-month="October" data-day="Saturday">25</p>
+                    <p class="days" data-month="October" data-day="Sunday">26</p>
+                    <p class="days" data-month="October" data-day="Monday">27</p>
+                    <p class="days" data-month="October" data-day="Tuesday">28</p>
+                    <p class="days" data-month="October" data-day="Wednesday">29</p>
+                    <p class="days" data-month="October" data-day="Thursday">30</p>
+                    <p class="days" data-month="October" data-day="Friday">31</p>
+                </div>
+            </div>
+
+            <!-- November 2025 (starts on Saturday) -->
+            <div class="month-container">
+                <div class="bcb-header November">
+                    <p class="month">November</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body November">
+                    <p class="days" style="grid-column: 1;" data-month="November" data-day="Saturday">1</p>
+                    <p class="days" data-month="November" data-day="Sunday">2</p>
+                    <p class="days" data-month="November" data-day="Monday">3</p>
+                    <p class="days" data-month="November" data-day="Tuesday">4</p>
+                    <p class="days" data-month="November" data-day="Wednesday">5</p>
+                    <p class="days" data-month="November" data-day="Thursday">6</p>
+                    <p class="days" data-month="November" data-day="Friday">7</p>
+                    <p class="days" data-month="November" data-day="Saturday">8</p>
+                    <p class="days" data-month="November" data-day="Sunday">9</p>
+                    <p class="days" data-month="November" data-day="Monday">10</p>
+                    <p class="days" data-month="November" data-day="Tuesday">11</p>
+                    <p class="days" data-month="November" data-day="Wednesday">12</p>
+                    <p class="days" data-month="November" data-day="Thursday">13</p>
+                    <p class="days" data-month="November" data-day="Friday">14</p>
+                    <p class="days" data-month="November" data-day="Saturday">15</p>
+                    <p class="days" data-month="November" data-day="Sunday">16</p>
+                    <p class="days" data-month="November" data-day="Monday">17</p>
+                    <p class="days" data-month="November" data-day="Tuesday">18</p>
+                    <p class="days" data-month="November" data-day="Wednesday">19</p>
+                    <p class="days" data-month="November" data-day="Thursday">20</p>
+                    <p class="days" data-month="November" data-day="Friday">21</p>
+                    <p class="days" data-month="November" data-day="Saturday">22</p>
+                    <p class="days" data-month="November" data-day="Sunday">23</p>
+                    <p class="days" data-month="November" data-day="Monday">24</p>
+                    <p class="days" data-month="November" data-day="Tuesday">25</p>
+                    <p class="days" data-month="November" data-day="Wednesday">26</p>
+                    <p class="days" data-month="November" data-day="Thursday">27</p>
+                    <p class="days" data-month="November" data-day="Friday">28</p>
+                    <p class="days" data-month="November" data-day="Saturday">29</p>
+                    <p class="days" data-month="November" data-day="Sunday">30</p>
+                </div>
+            </div>
+
+            <!-- December 2025 (starts on Monday) -->
+            <div class="month-container">
+                <div class="bcb-header December">
+                    <p class="month">December</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body December">
+                    <p class="days" style="grid-column: 3;" data-month="December" data-day="Monday">1</p>
+                    <p class="days" data-month="December" data-day="Tuesday">2</p>
+                    <p class="days" data-month="December" data-day="Wednesday">3</p>
+                    <p class="days" data-month="December" data-day="Thursday">4</p>
+                    <p class="days" data-month="December" data-day="Friday">5</p>
+                    <p class="days" data-month="December" data-day="Saturday">6</p>
+                    <p class="days" data-month="December" data-day="Sunday">7</p>
+                    <p class="days" data-month="December" data-day="Monday">8</p>
+                    <p class="days" data-month="December" data-day="Tuesday">9</p>
+                    <p class="days" data-month="December" data-day="Wednesday">10</p>
+                    <p class="days" data-month="December" data-day="Thursday">11</p>
+                    <p class="days" data-month="December" data-day="Friday">12</p>
+                    <p class="days" data-month="December" data-day="Saturday">13</p>
+                    <p class="days" data-month="December" data-day="Sunday">14</p>
+                    <p class="days" data-month="December" data-day="Monday">15</p>
+                    <p class="days" data-month="December" data-day="Tuesday">16</p>
+                    <p class="days" data-month="December" data-day="Wednesday">17</p>
+                    <p class="days" data-month="December" data-day="Thursday">18</p>
+                    <p class="days" data-month="December" data-day="Friday">19</p>
+                    <p class="days" data-month="December" data-day="Saturday">20</p>
+                    <p class="days" data-month="December" data-day="Sunday">21</p>
+                    <p class="days" data-month="December" data-day="Monday">22</p>
+                    <p class="days" data-month="December" data-day="Tuesday">23</p>
+                    <p class="days" data-month="December" data-day="Wednesday">24</p>
+                    <p class="days" data-month="December" data-day="Thursday">25</p>
+                    <p class="days" data-month="December" data-day="Friday">26</p>
+                    <p class="days" data-month="December" data-day="Saturday">27</p>
+                    <p class="days" data-month="December" data-day="Sunday">28</p>
+                    <p class="days" data-month="December" data-day="Monday">29</p>
+                    <p class="days" data-month="December" data-day="Tuesday">30</p>
+                    <p class="days" data-month="December" data-day="Wednesday">31</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>At</p>
+
+
+
+
+
+    <!--Time Pick Button-->
+    <div type="time" onclick="timePickerToggle();" class="booking-time-input" style="display: flex;" > 
+    </div>
+
+
+
+
+
+    <!--Time Pick Container-->
+    <div class="time-pick-container">
+        <div class="time-items-container">
+                <div class="hour-column">
+                    <p class="time-labels">Hour</p>
+                    <div class="hour-column-items">
+                    <button class="hour-button 1"  onclick="
+                        
+                        timeValuePick(this , 'hour');" data-value="1" type="button">1</button>
+                    <button class="hour-button 2"  onclick="timeValuePick(this , 'hour')" data-value="2" type="button">2</button>
+                    <button class="hour-button 3" onclick="timeValuePick(this , 'hour')" data-value="3" type="button">3</button>
+                    <button class="hour-button 4" onclick="timeValuePick(this , 'hour')" data-value="4" type="button">4</button>
+                    <button class="hour-button 5" onclick="timeValuePick(this , 'hour')" data-value="5" type="button">5</button>
+                    <button class="hour-button 6" onclick="timeValuePick(this , 'hour')" data-value="6" type="button">6</button>
+                    <button class="hour-button 7" onclick="timeValuePick(this , 'hour')" data-value="7" type="button">7</button>
+                    <button class="hour-button 8" onclick="timeValuePick(this , 'hour')" data-value="8" type="button">8</button>
+                    <button class="hour-button 9" onclick="timeValuePick(this , 'hour')" data-value="9" type="button">9</button>
+                    <button class="hour-button 10" onclick="timeValuePick(this , 'hour')" data-value="10" type="button">10</button>
+                    <button class="hour-button 11" onclick="timeValuePick(this , 'hour')" data-value="11" type="button">11</button>
+                    <button class="hour-button 12" onclick="timeValuePick(this , 'hour')" data-value="12" type="button">12</button>
+                    </div>
+                </div>
+
+                <div class="minute-column">
+                    <p class="time-labels">Minute</p>
+                    <div class="minute-column-items">
+                    <button class="minute-button 0" onclick="timeValuePick(this ,'minute');" data-value="00" type="button">:00</button>
+                    <button class="minute-button 15" onclick="timeValuePick(this , 'minute');" data-value="15" type="button">:15</button>
+                    <button class="minute-button 30" onclick="timeValuePick(this , 'minute');" data-value="30" type="button">:30</button>
+                    <button class="minute-button 45" onclick="timeValuePick(this , 'minute');" data-value="45" type="button">:45</button>
+                    </div>
+                </div>
+                <div class="pm-am">
+                    <p class="time-labels">Period</p>
+                    <div class="pm-am-column-items">
+                    <button class="period-button am" data-value="AM" onclick="timeValuePick(this , 'period');" data-value="AM" type="button">AM</button>
+                    <button class="period-button pm" data-value="PM" onclick="timeValuePick(this , 'period');" data-value="PM" type="button">PM</button>
+                    </div>
+                </div>
+
+
+        </div>
+
+
+
+        
+        
+                        <button class="time-pick-cta" onclick="
+                        
+                                const timePicker = document.querySelector('.time-pick-container-on');
+                                timePicker.classList.replace('time-pick-container-on', 'time-pick-container');  
+                        " type="button">
+                            Done
+                        </button>
+    </div>
+        
+    </div>
+</div>
+
+
+
+
+
+<!--Date Picker Arabic-->
+<div class="arabic-calendar-and-time-container arabic-calendar-off">
+    <div class="booking-date-and-time-wrapper-arabic">
+                          
+
+  <div class="booking-date-and-time-container-arabic">
+    <button class="booking-calendar-button-arabic" onclick="toggleCalendarA();         
+    const dateLabelA = document.querySelector('.date-label-title');
+    dateLabel.classList.replace('specify-date-label-arabic' , 'specify-date-label-arabic-valid');" type="button">
+      <strong class="calendar-button-day"></strong>
+    </button>
+
+    <div class="booking-calendar-off-arabic">
+
+      <div class="booking-calendar-header-arabic">
+        <p class="days-arabic-of-week">سبت</p>
+        <p class="days-arabic-of-week">أحد</p>
+        <p class="days-arabic-of-week">إثنين</p>
+        <p class="days-arabic-of-week">ثلاثاء</p>
+        <p class="days-arabic-of-week">أربعاء</p>
+        <p class="days-arabic-of-week">خميس</p>
+        <p class="days-arabic-of-week">جمعة</p>
+      </div>
+      <div class="booking-calendar-body-arabic">
+        <!-- October ٢٠٢٥ (starts on Wednesday) -->
+        <div class="month-container-arabic">
+          <div class="bcb-header-arabic أكتوبر">
+            <p class="month">أكتوبر</p> <p class="year">٢٠٢٥</p>
+          </div>
+          <div class="bcb-body-arabic أكتوبر">
+            <p class="days-arabic" style="grid-column: 5;" data-month="أكتوبر" data-day="الأربعاء">١</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الخميس">٢</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الجمعة">٣</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="السبت">٤</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأحد">٥</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الإثنين">٦</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الثلاثاء">٧</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأربعاء">٨</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الخميس">٩</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الجمعة">١٠</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="السبت">١١</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأحد">١٢</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الإثنين">١٣</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الثلاثاء">١٤</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأربعاء">١٥</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الخميس">١٦</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الجمعة">١٧</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="السبت">١٨</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأحد">١٩</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الإثنين">٢٠</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الثلاثاء">٢١</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأربعاء">٢٢</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الخميس">٢٣</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الجمعة">٢٤</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="السبت">٢٥</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأحد">٢٦</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الإثنين">٢٧</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الثلاثاء">٢٨</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الأربعاء">٢٩</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الخميس">٣٠</p>
+            <p class="days-arabic" data-month="أكتوبر" data-day="الجمعة">٣١</p>
+          </div>
+        </div>
+
+        <!-- November ٢٠٢٥ (starts on Saturday) -->
+        <div class="month-container-arabic">
+          <div class="bcb-header-arabic نوفمبر">
+            <p class="month">نوفمبر</p> <p class="year">٢٠٢٥</p>
+          </div>
+          <div class="bcb-body-arabic نوفمبر">
+            <p class="days-arabic" style="grid-column: 1;" data-month="نوفمبر" data-day="السبت">١</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأحد">٢</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الإثنين">٣</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الثلاثاء">٤</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأربعاء">٥</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الخميس">٦</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الجمعة">٧</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="السبت">٨</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأحد">٩</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الإثنين">١٠</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الثلاثاء">١١</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأربعاء">١٢</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الخميس">١٣</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الجمعة">١٤</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="السبت">١٥</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأحد">١٦</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الإثنين">١٧</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الثلاثاء">١٨</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأربعاء">١٩</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الخميس">٢٠</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الجمعة">٢١</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="السبت">٢٢</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأحد">٢٣</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الإثنين">٢٤</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الثلاثاء">٢٥</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأربعاء">٢٦</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الخميس">٢٧</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الجمعة">٢٨</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="السبت">٢٩</p>
+            <p class="days-arabic" data-month="نوفمبر" data-day="الأحد">٣٠</p>
+          </div>
+        </div>
+
+        <!-- December ٢٠٢٥ (starts on Monday) -->
+        <div class="month-container-arabic">
+          <div class="bcb-header-arabic ديسمبر">
+            <p class="month">ديسمبر</p> <p class="year">٢٠٢٥</p>
+          </div>
+          <div class="bcb-body-arabic ديسمبر">
+            <p class="days-arabic" style="grid-column: 3;" data-month="ديسمبر" data-day="الإثنين">١</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الثلاثاء">٢</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأربعاء">٣</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الخميس">٤</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الجمعة">٥</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="السبت">٦</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأحد">٧</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الإثنين">٨</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الثلاثاء">٩</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأربعاء">١٠</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الخميس">١١</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الجمعة">١٢</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="السبت">١٣</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأحد">١٤</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الإثنين">١٥</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الثلاثاء">١٦</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأربعاء">١٧</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الخميس">١٨</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الجمعة">١٩</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="السبت">٢٠</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأحد">٢١</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الإثنين">٢٢</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الثلاثاء">٢٣</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأربعاء">٢٤</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الخميس">٢٥</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الجمعة">٢٦</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="السبت">٢٧</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأحد">٢٨</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الإثنين">٢٩</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الثلاثاء">٣٠</p>
+            <p class="days-arabic" data-month="ديسمبر" data-day="الأربعاء">٣١</p>
+          </div>
+        </div>
+
+      </div></div>
+      <p>على</p>
+      <div type="time" onclick="timePickerToggleA();" class="booking-time-input-arabic" style="display: flex;" > 
+
+      </div>
+      <div class="time-pick-container-arabic">
+        <div class="time-items-container-arabic">
+          <div class="hour-column">
+            <p class="time-labels-arabic">الساعة</p>
+            <div class="hour-column-items">
+              <button class="hour-button 1"  onclick="timeValuePickA(this , 'hour');" data-value="١" type="button">١</button>
+              <button class="hour-button 2"  onclick="timeValuePickA(this , 'hour')" data-value="٢" type="button">٢</button>
+              <button class="hour-button 3" onclick="timeValuePickA(this , 'hour')" data-value="٣" type="button">٣</button>
+              <button class="hour-button 4" onclick="timeValuePickA(this , 'hour')" data-value="٤" type="button">٤</button>
+              <button class="hour-button 5" onclick="timeValuePickA(this , 'hour')" data-value="٥" type="button">٥</button>
+              <button class="hour-button 6" onclick="timeValuePickA(this , 'hour')" data-value="٦" type="button">٦</button>
+              <button class="hour-button 7" onclick="timeValuePickA(this , 'hour')" data-value="٧" type="button">٧</button>
+              <button class="hour-button 8" onclick="timeValuePickA(this , 'hour')" data-value="٨" type="button">٨</button>
+              <button class="hour-button 9" onclick="timeValuePickA(this , 'hour')" data-value="٩" type="button">٩</button>
+              <button class="hour-button 10" onclick="timeValuePickA(this , 'hour')" data-value="١٠" type="button">١٠</button>
+              <button class="hour-button 11" onclick="timeValuePickA(this , 'hour')" data-value="١١" type="button">١١</button>
+              <button class="hour-button 12" onclick="timeValuePickA(this , 'hour')" data-value="١٢" type="button">١٢</button>
+            </div>
+          </div>
+
+          <div class="minute-column">
+            <p class="time-labels-arabic">الدقيقة</p>
+            <div class="minute-column-items">
+              <button class="minute-button 0" onclick="timeValuePickA(this ,'minute');" data-value="٠٠" type="button">:٠٠</button>
+              <button class="minute-button 15" onclick="timeValuePickA(this , 'minute');" data-value="١٥" type="button">:١٥</button>
+              <button class="minute-button 30" onclick="timeValuePickA(this , 'minute');" data-value="٣٠" type="button">:٣٠</button>
+              <button class="minute-button 45" onclick="timeValuePickA(this , 'minute');" data-value="٤٥" type="button">:٤٥</button>
+            </div>
+          </div>
+          <div class="pm-am">
+            <p class="time-labels-arabic">الفترة</p>
+            <div class="pm-am-column-items">
+              <button class="period-button am" data-value="صباحاً" onclick="timeValuePickA(this , 'period');" data-value="صباحاً" type="button">صباحاً</button>
+              <button class="period-button pm" data-value="مساءً" onclick="timeValuePickA(this , 'period');" data-value="مساءً" type="button">مساءً</button>
+            </div>
+          </div>
+        </div>
+        <button class="time-pick-cta-arabic" onclick="
+        const timePickerA = document.querySelector('.time-pick-container-arabic-on');
+        timePickerA.classList.replace('time-pick-container-arabic-on', 'time-pick-container-arabic');" type="button">
+          تم
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<!--Submit Button-->
+<button class="booking-submit-button" type="submit" onclick="dataExtraction(); saveUserData();  ">Finish Booking</button>
+            
+            
+            
+            
+            
+</form>
+</section>
+
+
+</body>
+<script  src="PFS.js"></script>
+
+</html>
+<style>
+.time-pick-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: clamp(0px, 86.5116279vw, 438px);
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    border-radius: clamp(0px, 2.3255814vw, 11.78px);
+    position: absolute;
+    left: 999px;
+    height: 0px;
+    transition: 0.2s;
+    display: none;
+}
+
+
+.time-pick-container .time-items-container, .time-pick-container button , .time-pick-container p{
+height: 0px;
+}
+
+.time-pick-container-on{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: clamp(0px, 86.5116279vw, 438px);
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    border-radius: clamp(0px, 2.3255814vw, 15.5px);
+    position: absolute;
+    height: clamp(0px, 138.6046511516129vw, 702px);
+    transition: 0.2s;
+    top: -1000%;
+    z-index: 100;
+}
+
+.time-pick-container-on button:active{
+    background-color: #DBA622;
+}
+
+.time-pick-container-on button{
+    transition: 0.2s;
+}
+
+.time-pick-container button:active{
+    background-color: #DBA622;
+}
+
+.active{
+    background-color: #DBA622 !important;
+}
+
+.time-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: clamp(0px, 4.88372093vw, 24.75px);
+    padding-right: clamp(0px, 4.88372093vw, 24.75px);
+}
+
+.time-labels{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: clamp(0px, 13.95348837096774vw, 70.72px);
+    display: flex
+;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hour-column{
+    height: clamp(0px, 104.186047vw, 529.02px);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: clamp(0px, 5.58139535vw, 28.28px);
+}
+
+.hour-column-items{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: clamp(0px, 104.186047vw, 529.229px);
+}
+
+.hour-button , .active-hour-value{   
+        background-color: #363434;
+        color: white;
+        width: clamp(0px, 24.6511628vw, 125px);
+        height: clamp(0px, 6.97674419vw, 35.36px);
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
+        font-weight: bold;
+        line-height: 1;
+
+
+        border: none;
+        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+        font-size: clamp(0px ,3.72093023vw , 18.8651px);
+        box-sizing: border-box;
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+
+.hour-button:hover{
+    cursor: pointer;
+}
+
+.minute-column , .active-minute-value, .period-button , .active-period-value{
+    height: clamp(0px, 104.186047vw, 529.33);
+}
+
+.minute-column button, .pm-am button{
+    margin-bottom: clamp(0px, 1vw, 5.07px);
+}
+
+.minute-button , .period-button{
+        background-color: #363434;
+        color: white;
+        width: clamp(0px, 24.6511628vw, 124.99999999999999px);
+        height: clamp(0px, 10.4651163vw, 53px);
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
+        font-weight: bold;
+
+
+        border: none;
+        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+        font-size: clamp(0px ,3.72093023vw , 18.8651px);
+        box-sizing: border-box;
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+
+
+.minute-button:hover, .period-button:hover{
+    cursor: pointer;
+}
+
+.time-cta-container{
+    width: clamp(0px, 86.5116279vw, 438px);
+}
+
+
+.time-pick-cta{
+    width: 100%;
+    height: clamp(0px, 14.8837209vw, 75.5px);
+    background-color: #363434;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 0px 0px clamp(0px, 2.3255814vw, 15.5px) clamp(0px, 2.3255814vw, 15.5px);
+    font-size: clamp(0px, 3.72093023vw, 18.8651px);
+    cursor: pointer;
+}
+
+
+
+</style>
+    
+    <script  src="booking-page.js">
+
+    </script>
+
+
+
+    </script>
+
+
+
+

@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+</head>
+<body>
+    
+<!--Header-->
+    <header class="header">
+
+        <div class="header-items-container">
+
+
+
+
+
+        <!--Left Side Header-->
+         <a class="header-left-box" href="index.html">
+            <div class="logo-mask"><img src="ImagesFolder/Logo.png" alt="Logo-Ananas" class="header-logo" loading="lazy"></div>
+            <div class="name-mask"><div class="name english" >Ananas</div></div>
+         </a>     
+
+
+
+
+
+         <!--Right Side Header-->
+         <div class="header-right-box">
+
+            <button class="language language-animation" onclick="
+                
+                switchLanguage();
+                ">ع</button>
+
+
+    </header>
+
+
+
+
+
+<!--Service Thumbnail (Holder)-->
+<section class="service-thumbnail-holder">
+        <div class="service-thumbnail">
+            <div class="service-icon-and-name">
+                <div class="service-icon"></div>
+                Ananas Triple
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+<!--Service Label-->
+<div class="service-label">
+        <div class="package-name-and-countdown">
+
+            <div class="package-name-and-icon">
+                <img src="ImagesFolder/Flash-icon.png" class="package-icon">
+                Flash Package
+            </div>
+
+            <p class="countdown countdown-en">03 : 22 : 18 : 43</p>
+        </div>
+        <div class="package-price">
+                    <p class="currency" >KD</p>
+                    <div class="package-price-numbers">
+                        <div class="crossed-price"></div>
+                        <div class="current-price">290</div>
+                    </div>
+        </div>
+</div>
+
+
+
+
+
+<!--Feature Section-->
+    <div class="package-features">
+        <div class="package-feature1 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Full 3 Nights Stay
+        </div>
+        <div class="package-feature2 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            High Quality Accomidation Services.
+        </div>
+        <div class="package-feature3 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Ground Floor:
+
+        </div>
+            <ul class="sub-feature sub-feature1">
+                <li>-Large Living Room.</li>
+                <li>-Master bedroom with swimming pool view.</li>
+                <li>-Diwaniah with outdoor intrance.</li>
+                <li>-Fully prepared kitchen</li>
+            </ul>
+        <div class="package-feature4 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            First Floor:
+        </div>
+            <ul class="sub-feature sub-feature2">
+                <li>-Full living room with balcony.</li>
+                <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>
+            </ul>
+        <div class="package-feature5 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Second Floor:
+        </div>
+            <ul class="sub-feature sub-feature3">
+                <li>-Maid Bedroom (Master).</li>
+                <li>-Color correction and sound editing for videos.</li>
+            </ul>
+        <div class="package-feature7 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Additional Features:
+        </div>
+            <ul class="sub-feature sub-feature4">
+                <li>-Swimming Pool 9 X 5 with heating system.</li>
+                <li>-Outdoor seating with sea view.</li>
+                <li>-Children games.</li>
+                <li>-Baby Foot(game) in living room.</li>
+                <li>-Air Hockey.</li>
+                <li>-Large Dinning Table.</li>
+                <li>-Functional Elevator.</li>
+                <li>-Tanning Chairs.</li>
+                <li>-Swimming pool windows can be shut to make it private.</li>
+            </ul>
+    </div>
+
+
+
+
+
+<!--Review Footer-->
+    <div class="review-footer">
+        <div class="review-footer-container">
+            <strong class = 'payment-confirmation-note'>*Payment & Confirmation after our call.</strong>
+            <button class="review-cta" onclick="window.location.href='Booking-Page.html';">Continue To Booking</button>
+        </div>
+    </div>
+    
+    <div class="review-footer-padding">
+
+    </div>
+    
+</body>
+</html>
+<style>
+
+
+*{
+    flex-shrink: 0;
+}
+
+body{
+    font-family: Inter , sans-serif;
+}
+
+body::-webkit-scrollbar {
+    opacity: 0;
+    width: 8px;
+    transition: 0.2s;
+    border-radius: 0.5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(94, 94, 93, 0.4) 100%
+  );
+  border-radius: 1px; /* Rounded corners */
+  opacity: 1;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(94, 94, 93, 0.6) 100%
+  );
+}
+
+
+
+.header-right-box{
+    width: fit-content;
+}
+
+.service-icon-arabic{
+    width: clamp(0px, 4.259vw, 21.56px);
+    background-image: url(ImagesFolder/chalet-stay-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: clamp(0px, 4.259vw, 21.56px);
+    border-radius: 50%;
+    margin-left: clamp(0px, 2vw, 10.14px);
+}
+
+.name{
+    margin-left:  clamp(0px, 1.86vw, 11.736px);
+    margin-right:  clamp(0px, 1.86vw, 11.736px);
+;
+}
+
+.review-footer-padding{
+    height: clamp(0px , 41.09vw , 208.04px);
+    width: 100vw;
+}
+
+.payment-confirmation-note{
+    font-size: clamp(0px , 2.7918vw , 14.16px);
+    margin-bottom: clamp(0px , 6.52vw , 33.03px);
+    align-self: start;
+}
+
+.review-cta{
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    height: clamp(0px , 17.44365vw , 88.32px);
+    border-radius: clamp(0px , 2.324vw , 11.77px);
+    background-color: #DBA622;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0 ;
+    margin-bottom: clamp(0px , 1.52vw , 7.70px);
+    font-size: clamp(0px ,3.55vw , 18px);
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+}
+
+.review-footer-container{
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-footer{
+    width:  100vw ;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0px , 5.58vw , 28.28px);
+    box-sizing: border-box;
+    height: clamp(0px , 40.09vw , 203.04px);
+    z-index: 10;
+    flex: 1;
+}
+
+.sub-feature{
+    margin: 0px;
+}
+
+.sub-feature li{
+    list-style-type: none;
+    font-weight: 100;
+    font-size: clamp(0px , 2.79vw , 14.14px);
+    line-height: 2;
+}
+
+.bulletpoint-en{
+    width: clamp(0px , 1vw , 5.07px);
+    height: clamp(0px , 1vw , 5.07px);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    margin-right: clamp(0px , 2vw , 10.14px);
+}
+
+.bulletpoint-ar{
+    width: clamp(0px , 1vw , 5.07px);
+    height: clamp(0px , 1vw , 5.07px);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    margin-left: clamp(0px , 2vw , 10.14px);
+}
+
+.package-feature1{
+    margin: 0px;
+}
+
+.package-feature{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: clamp(0px , 3.26vw , 16.52px);
+    line-height: 1.3;
+    margin-top: 3vw;
+}
+
+.package-features{
+    margin-top: clamp(0px , 12.625vw , 64.01px);    
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    line-height: 3;
+}
+
+.package-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.package-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: clamp(0px, 1.86vw, 9.42px);
+    font-weight: bold;
+}
+
+.currency{
+    width: clamp(0px, 3.25vw, 16.48px);
+    font-size: clamp(0px, 3.6vw, 18.23px); 
+    font-weight: bold;
+}
+
+.current-price{
+    font-size: clamp(0px, 3vw, 17px);
+}
+
+.crossed-price{
+    text-decoration: line-through solid white clamp(0px, 0.4vw, 2.03px);
+    font-size: clamp(0px, 2.32vw, 11.76px);
+}
+
+.package-price-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    padding-left: clamp(0px , 3vw , 15.21px);
+}
+
+    .countdown-en{
+        width: clamp(0px , 14.25vw , 72.18px);
+        height: fit-content;
+        margin: 0px;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: clamp(0px , 2vw , 10.14px)
+    }
+
+    .countdown-ar{
+        width: clamp(0px , 14.25vw , 72.18px);
+        height: fit-content;
+        margin: 0px;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: clamp(0px , 2vw , 10.14px);
+    }
+
+    .package-description{
+        font-size: clamp(0px , 2vw , 10.14px)
+    }
+
+    .package-name-and-icon{
+        display: flex;
+        align-items: center;
+        font-size: clamp(0px , 2.32vw , 11.76px);
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .package-name-and-countdown{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        line-height: 1;
+        height: 100%;
+    }
+
+    .package-icon{
+        width: clamp(0px, 2.3255814vw, 11.78px);
+        filter: drop-shadow(0px 0px 1.3vw #DBA622);
+        margin-right: clamp(0px , 1.39534884vw , 7.07px);
+    }
+
+
+    .service-label{
+        margin-top: clamp(0px , 8.36vw , 42.39px);
+        width: clamp(0px , 86.5116279vw , 439.01px);
+        height: clamp(0px , 7.29vw , 36.927px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: Inter;
+    }
+
+
+    .service-thumbnail-holder{
+        width: clamp(0px , 86.5116279vw , 439.01px);
+        height: clamp(0px , 59.19vw , 300.39px);
+        background-color: #161616;
+        border-radius: clamp(0px , 2.325vw , 11.78px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-thumbnail{
+        width: clamp(0px , 84.4116279vw , 427.39px);
+        height: clamp(0px , 57.19vw , 289.86px);
+        background-color: #161616;
+        border-radius: clamp(0px , 2.025vw , 10.26px);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-image: url(ImagesFolder/Ananas-Triple.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-clip: padding-box;
+    }
+
+    .service-icon-and-name{
+        height: clamp(0px , 6.978vw , 35.3785px);
+        border-radius: 0px clamp(0px ,0.4772727vw , 2.41977px) 0px 0px ;
+        background-color: #161616;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: clamp(0px , 3.56vw , 18.03px);
+        padding-right: 5%;
+    }
+    
+
+    .service-icon{
+        width: clamp(0px , 4.259vw , 21.56px);
+        background-image: url(ImagesFolder/chalet-stay-icon.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: clamp(0px , 4.259vw , 21.56px);
+        border-radius: 50%;
+        margin-right: clamp(0px , 2vw , 10.14px);
+    }
+
+    .service-icon-test{
+        width: clamp(0px , 4.259vw , 21.56px);
+        background-image: url(ImagesFolder/chalet-stay-icon.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: clamp(0px , 4.259vw , 21.56px);
+        border-radius: 50%;
+        margin-right: clamp(0px , 2vw , 10.14px);
+    }
+
+    
+    .header {
+        width: clamp(0px , 100vw ,507px);
+        height: clamp(0px ,22.5vw 114.075px) !important;
+        left: 0px;
+        right: 0px;
+        background-color: #0D0D0D;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+
+    .package-icon-arabic{
+    width: clamp(0px, 2.3255814vw, 11.78px);
+    filter: drop-shadow(0px 0px 1.3vw #DBA622);
+    margin-left: 1.39534884vw;
+    transform: rotateY(180deg)
+}
+</style>
+
+<script>
+
+const header = document.querySelector('.header');
+
+
+
+
+
+
+let countdownTimer = null; // Declare a variable to hold the interval ID
+
+function countDownLanguage() {
+  // Clear any existing countdown interval to prevent overlapping
+  if (countdownTimer) {
+    clearInterval(countdownTimer);
+    countdownTimer = null;
+  }
+
+  const language = document.querySelector('.language').innerText;
+  const countdownElement = document.querySelector('.countdown');
+
+  // Clear previous countdown display to avoid overlap or lag
+  countdownElement.innerText = '';
+
+  // Determine the correct class and swap if needed
+  if (language === 'ع') {
+    if (countdownElement.classList.contains('countdown-en')) {
+      countdownElement.classList.replace('countdown-en', 'countdown-ar');
+    }
+  } else if (language === 'EN') {
+    if (countdownElement.classList.contains('countdown-ar')) {
+      countdownElement.classList.replace('countdown-ar', 'countdown-en');
+    }
+  }
+
+  // Use a fixed, valid target date
+  const targetDate = new Date('2025-10-30T23:59:59'); // Corrected date
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      // When countdown finishes
+      if (language === 'ع') {
+        countdownElement.innerText = '00 : 00 : 00 : 00';
+      } else if (language === 'EN') {
+        countdownElement.innerText = '۰۰ : ۰۰ : ۰۰ : ۰۰'; // Arabic numerals
+      }
+      clearInterval(countdownTimer);
+      countdownTimer = null;
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    if (language === 'ع') {
+      // Arabic display
+      const dd = String(days).padStart(2, '0');
+      const hh = String(hours).padStart(2, '0');
+      const mm = String(minutes).padStart(2, '0');
+      const ss = String(seconds).padStart(2, '0');
+
+      countdownElement.innerText = `${dd} : ${hh} : ${mm} : ${ss}`;
+    } else if (language === 'EN') {
+      // English numerals
+      const toArabicNumerals = (num) => {
+        const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+        return String(num).split('').map(d => arabicDigits[Number(d)]).join('');
+      };
+
+      const dd = toArabicNumerals(String(days).padStart(2, '0'));
+      const hh = toArabicNumerals(String(hours).padStart(2, '0'));
+      const mm = toArabicNumerals(String(minutes).padStart(2, '0'));
+      const ss = toArabicNumerals(String(seconds).padStart(2, '0'));
+
+      countdownElement.innerText = `${ss} : ${mm} : ${hh} : ${dd}`;
+    }
+  }
+
+  // Start the countdown
+  updateCountdown();
+
+  // Restart interval and store its ID
+  countdownTimer = setInterval(updateCountdown, 1000);
+}
+
+// Example call to initialize the countdown based on current language
+countDownLanguage();
+
+// If you switch language dynamically, call countDownLanguage() again
+// to reset the countdown and prevent overlapping intervals.
+
+
+
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        const serviceElements = {
+            ST : document.querySelector('.service-thumbnail'),
+            SINA : document.querySelector('.service-icon-and-name'),
+            SI : document.querySelector('.service-icon'),
+            PNI : document.querySelector('.package-name-and-icon'),
+            CrossedPrice : document.querySelector('.crossed-price'),
+            CurrentPrice : document.querySelector('.current-price'),
+            PF1 : document.querySelector('.package-feature1'),
+            PF2 : document.querySelector('.package-feature2'),
+            PF3 : document.querySelector('.package-feature3'),
+            SF1 : document.querySelector('.sub-feature1'),
+            PF4 : document.querySelector('.package-feature4'),
+            SF2 : document.querySelector('.sub-feature2'),
+            PF5 : document.querySelector('.package-feature5'),
+            SF3 : document.querySelector('.sub-feature3'),
+            PF6 : document.querySelector('.package-feature6'),
+            PF7 : document.querySelector('.package-feature7'),
+            SF4 : document.querySelector('.sub-feature4'),
+            PCN : document.querySelector('.payment-confirmation-note'),
+            RCTA : document.querySelector('.review-cta'),
+            PNC : document.querySelector('.package-name-and-countdown'),
+        };
+        console.log(serviceElements.SI);
+        console.log(serviceElements.SI);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/Ananas-Triple.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/chalet-stay-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Ananas Triple`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "></div>`
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `290`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full 3 Nights Stay`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon">Flash Package</div> <p class="countdown countdown-en">03 : 22 : 18 : 43</p>  </div>`;
+    
+
+        countDownLanguage();;
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card1-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/custom-booking-icon.png)"></div> Custom Booking`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Average Price per Weekend</div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `--`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Price Depends on days & date (Final price will be discussed on our call)`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon">Starter Package</div> <p class="countdown countdown-en">Price Depends</p>  </div>`;
+
+    }else if(serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card2-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/discovery-visit-icon.png)"></div> Discovery Visit`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  ``;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Arrange a discovery visit to enter the chalet and get a look with a guide before booking.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = ` <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">--</p>`;
+        }
+
+        serviceElements.PCN.innerText = ' *Payment & Confirmation after our call.';
+
+        serviceElements.RCTA.innerText = 'Continue To Booking';
+        serviceElements.RCTA.style.fontFamily = 'Inter';
+
+
+        language = 'English';
+        console.log('Switched Language to English');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+
+
+        console.log('English is the current language');
+
+
+
+
+
+
+
+
+    
+
+function currentLanguage(){
+
+    let languageStored = JSON.parse(localStorage.getItem('previousLanguage')) || 'English';
+
+    if (languageStored =='Arabic') {
+
+        console.log('English is current, now switching to Arabic');
+
+
+        const portfolioName = document.querySelector('.name');
+        portfolioName.innerHTML = 'أناناس';
+
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'EN';
+
+        document.body.style.direction = 'rtl';
+        document.body.style.fontFamily = 'Noto Sans Arabic';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row-reverse';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if(packageIconA){
+        packageIconA.style.marginRight = '0px';
+        packageIconA.style.marginLeft = 'clamp(0px, 1.39534884vw, 7.07px)';};
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-en', 'bulletpoint-ar');
+        });
+
+        countDownLanguage();;
+
+
+
+
+        if (serviceNO == 1){
+        
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/Ananas-Triple.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/chalet-stay-icon.png) ;`;
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic"></div> ثلاثية أناناس`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon-arabic" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "></div>`
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `290`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> يشمل 3 ليالي كاملات`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني: `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة:`
+        serviceElements.SF4.innerHTML = `                <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon-arabic" style="margin-right: 0px;  margin-left: clamp(0px, 1.39535vw, 7.07px); ">باقة فلاش</div> <p class="countdown countdown-ar">03 : 22 : 18 : 43</p>  </div>`;
+        
+    
+        countDownLanguage();;
+    }else if (serviceNO == 2 ){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card1-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/custom-booking-icon.png)"></div> حجز إختياري `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> السعر يعتمد</div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `--`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> السعر يعتمد على الأيام و تاريخها (يتم مناقشته بمكالمة)`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني : `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة :`
+        serviceElements.SF4.innerHTML = ` <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon">باقة أساسية</div> <p class="countdown countdown-en">السعر يعتمد</p></div>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card2-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/discovery-visit-icon.png)"></div> زيارة إستكشافية `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  ``;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div>  تنسيق زيارة لدخول الشالية و رؤيته بالكامل مع وجود مرشد قبل الحجز.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني: `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة:`
+        serviceElements.SF4.innerHTML = `                <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">--</p>`;
+        }
+
+        serviceElements.PCN.innerText = ' *الدفع و تأكيد الحجز بعد مكالمتنا معكم.';
+
+        serviceElements.RCTA.innerText = 'الإستمرار للحجز';
+        serviceElements.RCTA.style.fontFamily = 'Noto Sans Arabic';
+
+        language = 'Arabic';
+        console.log('Switched Language to Arabic');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+   
+
+    }else if (languageStored == 'English'){
+
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'ع';
+
+        document.body.style.direction = 'ltr';
+        document.body.style.fontFamily = 'Inter';
+
+
+        const portfolioName = document.querySelector('.name');
+        portfolioName.innerText = 'Ananas';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if (packageIconA){
+        packageIconA.style.marginRight = 'clamp(0px, 1.39534884vw, 7.07px)';
+        packageIconA.style.marginLeft = '0px';}
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-ar', 'bulletpoint-en');
+        });
+
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/Ananas-Triple.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/chalet-stay-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Ananas Triple`
+serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "></div>`;
+
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `290`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full 3 Nights Stay`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon">Flash Package</div> <p class="countdown countdown-en">03 : 22 : 18 : 43</p>  </div>`;
+ 
+
+        countDownLanguage();;
+    
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card1-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/custom-booking-icon.png)"></div> Custom Booking`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Average Price per Weekend</div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `--`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Price Depends on days & date (Final price will be discussed on our call)`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon">Starter Package</div> <p class="countdown countdown-en">Price Depends</p>  </div>`;
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card2-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/discovery-visit-icon.png)"></div> Discovery Visit`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  ``;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Arrange a discovery visit to enter the chalet and get a look with a guide before booking.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = ` <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">--</p>`;
+        }
+
+        serviceElements.PCN.innerText = ' *Payment & Confirmation after our call.';
+
+        serviceElements.RCTA.innerText = 'Continue To Booking';
+        serviceElements.RCTA.style.fontFamily = 'Inter';
+
+
+        language = 'English';
+        console.log('Switched Language to English');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+
+
+        console.log('English is the current language');
+
+    }};
+
+
+currentLanguage();
+
+
+
+
+
+
+    const langButton = document.querySelector('.language');
+    const savedCharacter = langButton.innerText;
+    console.log ('SAVED : ' + savedCharacter)
+
+    localStorage.setItem('savedCharacter' ,savedCharacter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+function switchLanguage(){
+
+    const langButton = document.querySelector('.language');
+
+    console.log(langButton.innerHTML)
+
+    if (langButton.innerHTML == 'ع') {
+
+        console.log('English is current, now switching to Arabic');
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'EN';
+
+        document.body.style.direction = 'rtl';
+        document.body.style.fontFamily = 'Noto Sans Arabic';
+
+        const nameA = document.querySelector('.name');
+        nameA.innerText = 'أناناس';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row-reverse';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if(packageIconA){
+        packageIconA.style.marginRight = '0px';
+        packageIconA.style.marginLeft = 'clamp(0px, 1.39534884vw, 7.07px)';};
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-en', 'bulletpoint-ar');
+        });
+
+
+
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/Ananas-Triple.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/chalet-stay-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic"></div> ثلاثية أناناس`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon-arabic" style="margin-right: 0px;  margin-left: clamp(0px, 1.39535vw, 7.07px); "></div>`
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `290`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> يشمل 3 ليالي كاملات`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني: `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة:`
+        serviceElements.SF4.innerHTML = `                <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-right: 0px; margin-left: clamp(0px, 1.39535vw, 7.07px); ">باقة فلاش</div> <p class="countdown countdown-ar">03 : 22 : 18 : 43</p>  </div>`;        
+
+        countDownLanguage();;
+
+    }else if (serviceNO == 2 ){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card1-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/custom-booking-icon.png)"></div> حجز إختياري`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> السعر يعتمد</div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `--`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> السعر يعتمد على الأيام و تاريخها (يتم مناقشته بمكالمة)`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني : `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة :`
+        serviceElements.SF4.innerHTML = ` <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon">باقة أساسية</div> <p class="countdown countdown-en">السعر يعتمد</p></div>`;
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card2-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/discovery-visit-icon.png)"></div> زيارة إستكشافية `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  ``;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div>  تنسيق زيارة لدخول الشالية و رؤيته بالكامل مع وجود مرشد قبل الحجز.`;
+         serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> خدمات ضيافة عالية الجودة`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأرضي :`
+        
+        serviceElements.SF1.innerHTML = `<li>-صالة كبيرة.</li> <li>-غرفة ماستر مطلة على المسبح.</li><li>-ديوانية مع مدخل خارجي.</li> <li>-مطبخ مجهز بالكامل.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الأول:`;
+        serviceElements.SF2.innerHTML = `<li>-صالة كاملة مع بلكونة.</li> <li>-6 غرف ماستر (كل غرفتين بجانب).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> الدور الثاني: `;
+        serviceElements.SF3.innerHTML = `<li>-غرفة ماستر للخادمة.</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مرفقات مميزة:`
+        serviceElements.SF4.innerHTML = `  <li>-مسبح تسعة بخمسة مع نظام تدفئة.</li> <li>-جلسة خارجية مطلة على البحر.</li> <li>-ألعاب أطفال.</li> <li>-لعبة بيبي فوت في الصالة.</li><li>-آيرهوكي.</li> <li>-طاولة طعام كبيرة.</li> <li>-مصعد فعال.</li><li>-كراسي تان.</li> <li>-إمكانية إغلاق الشترات على المسبح ليصبح برايفت.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">--</p>`;
+        }
+
+
+        serviceElements.PCN.innerText = ' *الدفع و تأكيد الحجز بعد مكالمتنا معكم.';
+
+        serviceElements.RCTA.innerText = 'الإستمرار للحجز';
+        serviceElements.RCTA.style.fontFamily = 'Noto Sans Arabic';
+
+
+        language = 'Arabic';
+        console.log('Switched Language to Arabic');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+    
+    }else if (langButton.innerHTML == 'EN'){
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'ع';
+
+        document.body.style.direction = 'ltr';
+        document.body.style.fontFamily = 'Inter';
+
+
+
+        const nameA = document.querySelector('.name');
+        nameA.innerText = 'Ananas';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if (packageIconA){
+        packageIconA.style.marginRight = 'clamp(0px, 1.39534884vw, 7.07px)';
+        packageIconA.style.marginLeft = '0px';}
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-ar', 'bulletpoint-en');
+        });
+
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/Ananas-Triple.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/chalet-stay-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Ananas Triple`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "> </div>`
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `290`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full 3 Nights Stay`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon">Flash Package</div> <p class="countdown countdown-en">03 : 22 : 18 : 43</p>  </div>`;
+ 
+    
+        countDownLanguage();;
+
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card1-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/custom-booking-icon.png)"></div> Custom Booking`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Average Price per Weekend</div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `--`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Price Depends on days & date (Final price will be discussed on our call)`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = `                <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-countdown"><div class="package-name-and-icon">Starter Package</div> <p class="countdown countdown-en">Price Depends</p>  </div>`;
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/Service-card2-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/discovery-visit-icon.png)"></div> Discovery Visit`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  ``;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Arrange a discovery visit to enter the chalet and get a look with a guide before booking.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Ground Floor:`
+        
+        serviceElements.SF1.innerHTML = `<li>-Large Living Room.</li> <li>-Master bedroom with swimming pool view.</li><li>-Diwaniah with outdoor intrance.</li> <li>-Fully prepared kitchen</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> First Floor:`;
+        serviceElements.SF2.innerHTML = `<li>-Full living room with balcony.</li> <li>-6 bedrooms ALL MASTER (Each 2 in separate side).</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Second Floor: `;
+        serviceElements.SF3.innerHTML = `<li>-Maid Bedroom (Master).</li>`;
+
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Additional Features:`
+        serviceElements.SF4.innerHTML = ` <li>-Swimming Pool 9 X 5 with heating system.</li> <li>-Outdoor seating with sea view.</li> <li>-Children games.</li> <li>-Baby Foot(game) in living room.</li><li>-Air Hockey.</li> <li>-Large Dinning Table.</li> <li>-Functional Elevator.</li><li>-Tanning Chairs.</li> <li>-Swimming pool windows can be shut to make it private.</li>`;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">--</p>`;
+        }
+
+        serviceElements.PCN.innerText = ' *Payment & Confirmation after our call.';
+
+        serviceElements.RCTA.innerText = 'Continue To Booking';
+        serviceElements.RCTA.style.fontFamily = 'Inter';
+
+
+        language = 'English';
+        console.log('Switched Language to English');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+}};          
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,124 @@
+    .purpose-of-shoot{
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 63.639px);
+   
+        border: none;
+        font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
+        font-family: Inter;
+        font-weight: bold;
+        color: white;
+        background-color: #1b1b1b;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
+        transition: 0.2s;
+        cursor: pointer;
+        position: static;
+        top: 0px;
+
+        margin-bottom: clamp(0px, 8.95348837vw, 45.37px);
+    }
+    
+    .purpose-of-shoot-title{
+        margin-bottom: clamp(0px, 5.34883721vw, 27.1px);
+    }
+
+    .purpose-of-shoot-title-valid{
+        margin-bottom: clamp(0px, 5.3488372vw, 27.1px);
+    }
+
+    .purpose-of-shoot-title::after{
+       content: '*';
+       color: red;
+       margin-left: clamp(0px, 1vw, 5.07px);
+    }
+
+    .purpose-of-shoot-title-valid:after{
+        content: url('Correct.png');
+        margin-left: clamp(0px, 1vw, 5.07px);
+    }
+
+    .purpose-of-shoot-description{
+        font-size: clamp(0px ,3.72093023vw , 18.8651px);
+        font-weight: 300;
+        margin-top: clamp(0px, 3.02325581vw, 15.3px);
+    }
+
+
+    .purpose-of-shoot-toggled{
+        width: clamp(0px, 86.5116279vw, 438px);
+        border: none;
+        font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
+        font-family: Inter;
+        font-weight: bold;
+        color: white;
+        background-color: #1b1b1b;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: clamp(0px, 2.2355814vw, 11.34px);
+        transition: 0.2s;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        position: static;
+        
+        margin-bottom: clamp(0px, 3.02325581vw, 15.3125px);
+
+    }
+    
+    .option1-items-container{
+        display: flex ;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    
+    .purpose-of-shoot > div, .purpose-of-shoot-toggled > div{
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 63.65px);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    
+        font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #1b1b1b;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
+        box-sizing: border-box;
+        padding-left: clamp(0px, 7.20930232vw, 36.5px);
+        padding-right: clamp(0px, 7.20930232vw, 36.5px);
+        white-space: nowrap;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
+    .picked-option-pos{
+        order: -1;
+    }
+    
+    .option1-icon{
+        width: clamp(0px, 4.65116279vw, 23.56px);
+        margin-right: clamp(0px, 2.3255814vw, 11.77px);
+    }
+
+
+    .dropdown-icon{
+        width: clamp(0px, 2.3vw, 11.66px);
+        display: none;
+    }
+
+    .dropdown-icon-on{
+        width: clamp(0px, 2.3vw, 11.66px);
+        display: flex;
+        transition: 0.2s;
+        overflow: visible;
+    }

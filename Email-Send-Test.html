@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Email via Apps Script</title>
+</head>
+<body>
+  <h1>Send Message</h1>
+  <textarea id="message" rows="4" cols="50"></textarea><br>
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    function sendMessage() {
+      const message = document.getElementById('message').value;
+      const url = 'https://script.google.com/macros/s/AKfycbwVnT6fixru_RiQdoTrH_sXAJEumlBGhlMWNCSwD_3AsKPFxE7krNvPM9pNFeES0rrl/exec'; // Replace with your deployed Apps Script URL
+
+      fetch(url, {
+        method: 'POST',
+        contentType: 'application/json',
+        body: JSON.stringify({ message: message })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if(data.status === 'success') {
+          alert('Email sent successfully!');
+        } else {
+          alert('Error: ' + data.message);
+        }
+      })
+      .catch(error => alert('Error: ' + error));
+    }
+  </script>
+</body>
+</html>

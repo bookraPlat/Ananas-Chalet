@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananas Chalet | AL-Khairan</title>
+
+
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+
+<!--Header-->
+    <header class="header">
+
+        <div class="header-items-container">
+
+         <!--Left Side Header-->
+         <a class="header-left-box" href="index.html">
+            <div class="logo-mask"><img src="ImagesFolder/Logo.png" alt="Logo-Ananas" class="header-logo" loading="lazy"></div>
+            <div class="name-mask"><div class="name english" >Ananas</div></div>
+         </a>     
+
+
+
+
+
+
+         <!--Right Side Header-->
+         <div class="header-right-box">
+
+            <button class="language language-animation" onclick="
+                
+                switchLanguage();
+                ">ع</button>
+
+            <div class="vr"></div>
+
+            <div class="hamburger-or-x-container">
+
+                <div class="hamburger hmbrgr-off">
+                    <div class="hamburger1-NF hmbrgr1"></div>
+                    <div class="hamburger2-NF hmbrgr2"></div>
+                    <div class="hamburger3-NF hmbrgr3"></div>
+                </div>
+
+                <div class="hamburger-functional"  onclick="
+                hamburgerFunction();
+                ">
+                    <div class="hamburger1 hmbrgr1"></div>
+                    <div class="hamburger2 hmbrgr2"></div>
+                    <div class="hamburger3 hmbrgr3"></div>
+                </div>
+
+
+                <div class="sidebar-x">
+                        <div class="x-line1"></div>
+                        <div class="x-line2"></div>
+                </div>
+                <div class="sidebar-x-functional" onclick="
+                sidebarX();
+                ">
+                        <div class="x-line1"></div>
+                        <div class="x-line2"></div>
+                </div>
+
+            </div>
+         </div>
+        </div>
+
+
+
+
+
+         <!--Hamburger Menu-->
+         <aside class="sidebar">
+            <a href="#" class="sidebar-booking-section" onclick="sidebarX()" >Booking</a>
+            <a  href="#service-section" class="sidebar-services-section" onclick="sidebarX()">Services</a>
+            <a href="#experience-section" class="sidebar-experience-section" onclick="sidebarX()">Details</a>
+            <a href="#gallery-section" class="sidebar-gallery-section" onclick="sidebarX()">Gallery</a>
+         </aside>
+
+        <aside class="sidebar-arabic">
+            <a href="#" class="sidebar-booking-section" onclick="sidebarX()">الحجز</a>
+            <a  href="#service-section" class="sidebar-services-section" onclick="sidebarX()" >الخدمات</a>
+            <a href="#experience-section" class="sidebar-experience-section" onclick="sidebarX()" >التفاصيل</a>
+            <a href="#gallery-section" class="sidebar-gallery-section" onclick="sidebarX()" >المعرض</a>
+         </aside>
+
+    </header>
+
+
+
+
+
+
+
+
+
+<!--Hero Section (Bed)-->
+<div class="hero-bed">
+
+
+
+
+
+    <!--Hero Sectio Info (Top)-->
+    <div class="hero-info">
+            <div class="hero-info-image">
+                <img src="ImagesFolder/info-image.png" class="info-image">
+            </div>
+
+            <div class="hero-info-text-card">
+                <div class="name-and-role">
+                    <h1 class="role">Ananas Chalet</h1>
+                    <p class="info-name">Al-Khairan</p>
+                </div>
+                <div class="detail-phrases">
+                    <p class="detail-phrase1">Daily Rent 🗓️</p> | <p class="detail-phrase2">Sabah Al-Ahmed S.C📍</p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+    <!--Hero Section Main-->
+    <div class="hero-main">
+        <div class="hero-hook-and-package-container">
+        <p class="hero-hook">Want To Break Family Routine?</p>
+        <div class="hero-main-offer">
+            <div class="package-name-and-icon">
+                <img src="ImagesFolder/Pine-icon.png" alt="" class="package-icon pi-translate-en">
+                
+                <div class="package-name">Pine Package</div>
+            </div>
+            <div class="package-features">
+                <div class="package-feature1 package-feature"><div class="bulletpoint bulletpoint-en"></div> Full 3 Nights Stay.</div>
+                <div class="package-feature2 package-feature"><div class="bulletpoint bulletpoint-en"></div> High Quality Accomidation Services.</div>
+                <div class="package-feature3 package-feature"><div class="bulletpoint bulletpoint-en"></div>  Family Enviornment. </div>
+                <div class="package-feature4 package-feature"><div class="pluspoint pluspoint-en">+</div> So Much More!</div>
+                </div>
+
+
+            <div class="package-value">
+                <div class="package-time">
+                    <div class="package-time-icon">
+                        <img src="ImagesFolder/package-clock.png" class="package-time-clock">
+                    </div>
+                    <div class="package-time-text">
+                        <p class="time-text">Early October</p>
+                        <p class="countdown countdown-en">03 : 18 : 43 : 28</p>
+                    </div>
+                </div>
+                <hr class="time-value-line">
+                <div class="package-price">
+                    <p class="currency" >KD</p>
+                    <div class="package-price-numbers">
+                        <div class="crossed-price"></div>
+                        <div class="current-price">290</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="hero-main-cta">
+            <button class="black-cta-modified" onclick="window.location.href='review-page.html'; let serviceNo = 1 ; let mainPageService = '.service-pick-option1'; let mainPageServiceContainer  = '.service1-based-container'; localStorage.setItem('serviceNo',serviceNo);  localStorage.setItem('mainPageService',mainPageService);  localStorage.setItem('mainPageServiceContainer',mainPageServiceContainer);">Book Now</button>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Service Section-->
+<section class="service-section" id="service-section">
+        
+            <div class="services-introduction">
+                <p class="services-introduction-title">
+                    Services Offered
+                </p>
+                <p class="services-introduction-description">
+                    Tailored solutions designed to meet your unique needs for an ideal holiday.
+                </p>
+            </div>
+
+
+
+            <!--Service Card 1-->
+            <section class="service-card1">
+
+                <div class="service-card1-canvas-holder">
+                    <div class="canvas-card1-holder-items-container" onclick="window.location.href='review-page.html';  serviceNo = 2 ;  mainPageService = '.service-pick-option2';  mainPageServiceContainer  = '.service2-based-container'; localStorage.setItem('serviceNo',serviceNo);  localStorage.setItem('mainPageService',mainPageService);  localStorage.setItem('mainPageServiceContainer',mainPageServiceContainer);"  >
+                        <div class="service-card1-canvas"></div>
+                        <div class="service-card1-canvas-extension"><div class="cta-service-content"><p>Get Service</p> <img  src="ImagesFolder/Polygon4.png" class="service-polygon" loading="lazy"> </div></div>
+                        <div class="service-card1-text">
+                            <h1 class="service-card1-title"><img src="ImagesFolder/custom-booking-icon.PNG" class="custom-booking-icon">Custom Booking</h1>
+                            <h1 class="service-card1-description">Choose days and date.</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--Service Card 2-->
+            <section class="service-card2">
+
+                <div class="service-card2-canvas-holder">
+                    <div class="canvas-card2-holder-items-container" onclick="window.location.href='review-page.html';  serviceNo = 3 ;  mainPageService = '.service-pick-option3';  mainPageServiceContainer  = '.service3-based-container'; localStorage.setItem('serviceNo',serviceNo);  localStorage.setItem('mainPageService',mainPageService);  localStorage.setItem('mainPageServiceContainer',mainPageServiceContainer);"  >
+                        <div class="service-card2-canvas"></div>
+                        <div class="service-card2-canvas-extension"><div class="cta-service-content"><p>Get Service</p> <img  src="ImagesFolder/Polygon4.png" class="service-polygon" loading="lazy"> </div></div>
+                        <div class="service-card2-text">
+                            <h1 class="service-card2-title"><img src="ImagesFolder/discovery-visit-icon.png" class="discovery-visit-icon">Discovery Visit</h1>
+                            <h1 class="service-card2-description">Get a feel of the chalet.</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+<!--experience Section-->
+<section class="experience-section" id="experience-section">
+        <div class="experience-introduction">
+            <div class="experience-introduction-title">Main Details</div>
+            <div class="experience-introduction-description">This Section highlights the chalet's details</div>
+        </div>
+        
+        
+        
+        
+        
+        <!--Counter Section-->
+        <section class="counter-section">
+
+            <div class="counter-card1">
+                <div class="counter-card1-items-container">
+                    <div  class="counter-card1-number">+6</div>
+                    <div class="counter-card1-text">
+                        <div class="counter-card1-title">Master Rooms</div>
+                        <div class="counter-card1-description">6 bed rooms all master + maid master room</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="counter-card2">
+                <div class="counter-card2-items-container">
+                    <div  class="counter-card2-number">2</div>
+                    <div class="counter-card2-text">
+                        <div class="counter-card2-title">Floors</div>
+                        <div class="counter-card2-description">Chalet Consists of 2 floors holding with many features.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counter-card3">
+                <div class="counter-card3-items-container">
+                    <div class="counter-card3-number">+8</div>
+                    <div class="counter-card3-text">
+                        <div class="counter-card3-title">Add. Features</div>
+                        <div class="counter-card3-description">more details to view  about our Ananas chalet after booking button.</div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+
+
+
+
+
+        <!--Banner Section-->
+        <section class="banner-section">
+            <div class="banner-introduction">
+                <div class="banner-introduction-title">Chalet Features</div>
+                <div class="banner-introduction-description">Some of the main chalet feature that accomidate your needs.</div>
+            </div>
+
+            <div class="banner-square">
+                <div class="banner-item1">
+                    <img src="ImagesFolder/banner-item-image1.png" class="banner-item-image1" loading="lazy">
+                    <p class="banner-item1-title">Large Living Room</p>
+                </div>
+                <div class="banner-item2">
+                    <img src="ImagesFolder/banner-item-image2.png" class="banner-item-image2" loading="lazy">
+                    <p class="banner-item2-title">Fully Prepared Kitchen</p>
+                </div>
+                <div class="banner-item3">
+                    <img src="ImagesFolder/banner-item-image3.png" class="banner-item-image3" loading="lazy">
+                    <p class="banner-item3-title">Diwaniah + Bathroom</p>
+                </div>
+                <div class="banner-item4">
+                    <img src="ImagesFolder/banner-item-image4.png" class="banner-item-image4" loading="lazy">
+                    <span>
+                    <p class="banner-item4-title">6 Master Bedrooms</p>
+                    <p class="banner-item4-title2">+ Maid Room</p>
+                    </span>
+                </div>
+                <div class="banner-item5">
+                    <img src="ImagesFolder/banner-item-image5.png" class="banner-item-image5" loading="lazy">
+                    <span>
+                    <p class="banner-item5-title">Swiiming Pool</p>
+                    <p class="banner-item5-title2">+ Bathroom</p>
+                    </span>                
+                </div>
+                <div class="banner-item6">
+                    <img src="ImagesFolder/banner-item-image6.png" class="banner-item-image6" loading="lazy">
+                    <p class="banner-item6-title">Functional Elevator</p>
+                </div>
+                <div class="banner-item7">
+                    <img src="ImagesFolder/banner-item-image7.png" class="banner-item-image7" loading="lazy">
+                    <p class="banner-item7-title">Outdoor Seating</p>
+                </div>
+                <div class="banner-item8">
+                    <img src="ImagesFolder/banner-item-image8.png" class="banner-item-image8" loading="lazy">
+                    <p class="banner-item8-title">Entertainment Facilities</p>
+                </div>
+                <div class="banner-item9">
+                   
+                </div>
+            </div>
+
+            <div class="banner-comment">To view more details press the booking or visit button.</div>
+
+        </section>
+        
+        
+    </section>
+
+
+
+
+
+
+
+
+
+    
+<!--Gallery Section-->
+<section class="gallery-section" id="gallery-section">
+        <div class="gellery-introduction">
+            <div class="gallery-introduction-title">More Pics Less Words</div>
+            <div class="gallery-introduction-description">Feel free to view and scroll this gallery of <strong>Ananas Chalet</strong></div>
+        </div>
+
+        <div class="gallery-items-container">
+            <div class="gallery-container-header">
+                <div class="gallery-categories-container">
+                <p href="#" class="gallery-category1" onclick="
+                    let category1 = document.querySelector('.gallery-category1');
+                    let category1Container = document.querySelector('.category1-items-container');
+                    galleryCategoryToggle(category1 , category1Container);
+                    
+                    ">Indoor</p>
+
+                <p href="#" class="gallery-category2" onclick="
+                    let category2 = document.querySelector('.gallery-category2');
+                    let category2Container = document.querySelector('.category2-items-container');
+                    galleryCategoryToggle(category2 , category2Container);
+                    
+                    ">Outdoor</p>
+
+            </div>
+            <hr class="toggle-underline">
+
+
+            <div class="category1-items-container">
+                <div class="category1-portrait portrait-mode">
+                    <div class="category1-portrait-item1 tap-to-view" onclick="
+                            tapToView('ImagesFolder/category1-portrait-item1.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item1.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item2 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item2.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item2.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item3 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item3.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item3.jpg" loading="lazy" onclick="">
+                    </div>
+
+                    <div class="category1-portrait-item4 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item4.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item4.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item5 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item5.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item5.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item6 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item6.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item6.jpg" loading="lazy">                            
+                    </div>
+
+                    <div class="category1-portrait-item7 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item7.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item7.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item8 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item8.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item8.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item9 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item9.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item9.jpg" loading="lazy">
+                    </div>
+
+
+
+                    <div class="category1-portrait-item10 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item10.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item10.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item11 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item11.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item11.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category1-portrait-item12 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category1-portrait-item12.jpg');
+                        ">
+                        <img src="ImagesFolder/category1-portrait-item12.jpg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="category2-items-container">
+                <div class="category2-portrait portrait-mode">
+                    <div class="category2-portrait-item1 tap-to-view" onclick="
+                            tapToView('ImagesFolder/category2-portrait-item1.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item1.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item2 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item2.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item2.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item3 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item3.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item3.jpg" loading="lazy" onclick="">
+                    </div>
+
+                    <div class="category2-portrait-item4 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item4.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item4.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item5 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item5.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item5.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item6 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item6.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item6.jpg" loading="lazy" onclick="">
+                    </div>
+
+                    <div class="category2-portrait-item7 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item7.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item7.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item8 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item8.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item8.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item9 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item9.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item9.jpg" loading="lazy" onclick="">
+                    </div>
+
+                    <div class="category2-portrait-item10 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item10.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item10.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item11 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item11.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item11.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item12 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item12.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item12.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item13 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item13.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item13.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item14 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item14.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item14.jpg" loading="lazy">
+                    </div>
+
+                    <div class="category2-portrait-item15 tap-to-view"  onclick="
+                            tapToView('ImagesFolder/category2-portrait-item15.jpg');
+                        ">
+                        <img src="ImagesFolder/category2-portrait-item15.jpg" loading="lazy">
+                    </div>
+                   
+                </div>
+            </div>
+
+         
+
+            <div class="image-display-overlay">
+                <div class="image-display-overlay-items-container">
+
+                    <div class="overlay-display-x-container">
+                        <div class="overlay-display-x" onclick="
+                            
+                                const tapToViewOverlay = document.querySelector('.image-display-overlay-toggled').classList.remove('image-display-overlay-toggled')">
+                            <div class="x-line1"></div>
+                            <div class="x-line2"></div>
+                        </div>
+                    </div>
+
+                    <div class="viewed-image-holder"></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+</section>
+
+
+
+
+
+
+
+
+
+
+<!--Footer Section-->
+<section class="footer-section">
+        <div class="footer-section-container">
+            <h1 class="footer-title">How To Book?</h1>
+            <h2 class="footer-subtitle">My Booking Process:</h2>
+            <p class="footer-subtitle-description">Confirm Booking In Just 3 Steps!</p>
+            <div class="footer-visual-explanation">
+                <div class="footer-step1">
+                    <div class="footer-step1-items-container">
+                        <div class="step1-number">1.</div>
+                        <div class="step1-image-container"><img src="ImagesFolder/step1-image.png" class="step1-image"></div>
+                        <div class="step1-text">
+                            <div class="step1-title">Click Book Now</div>
+                            <div class="step1-description">Click on the Book Now button below.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-step2">
+                    <div class="footer-step2-items-container">
+                        <div class="step2-number">2.</div>
+                        <div class="step2-image-container"><img src="ImagesFolder/step2-image.png" class="step1-image"></div>
+                        <div class="step2-text">
+                            <div class="step2-title">Fill in the info & submit</div>
+                            <div class="step2-description">In next page, fill the details & click the yellow button.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-step3">
+                        <div class="footer-step3-items-container">
+                        <div class="step3-number">3.</div>
+                        <div class="step3-image-container"><img src="ImagesFolder/step3-image.png" class="step1-image"></div>
+                        <div class="step3-text">
+                            <p class="step3-title">Finalize On Our Call</p>
+                            <p class="step3-description">On our call we will finalize and confirm details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-visual-explanation-description">This button below will start you on the first step. Join the October Bookings!</p>
+
+                       
+                        <div class="footer-cta">
+                            <p class="countdown"></p>
+                             <button class="black-cta-modified" onclick="window.location.href='review-page.html'; serviceNo = 1 ;  mainPageService = '.service-pick-option1'; mainPageServiceContainer  = '.service1-based-container'; localStorage.setItem('serviceNo',serviceNo);  localStorage.setItem('mainPageService',mainPageService);  localStorage.setItem('mainPageServiceContainer',mainPageServiceContainer);">Book Now</button>
+                        </div>
+        </div>
+                    <div class="footer-copyrights"><img src="ImagesFolder/copyright-symbol.png"> <p class="Bookra.io-rights">Bookra.io</p></div>
+</section>
+
+
+
+    
+</body>
+<script  src="PFS.js"></script>
+
+</html>
