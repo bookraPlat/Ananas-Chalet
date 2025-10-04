@@ -26,6 +26,7 @@ body{
         unicode-bidi: bidi-override;
         line-height: 1;
         justify-self: flex-end;
+        align-self: flex-end;
     }
 
     .english-text{
@@ -1606,6 +1607,8 @@ p.gallery-category-active{
     max-width: 438.614px;
     height: 114.883721vw;
     max-height: 582.46px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-title{
