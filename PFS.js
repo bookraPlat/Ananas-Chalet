@@ -326,7 +326,7 @@ function currentLanguage(){
         const serviceCard1Title = document.querySelector('.service-card1-title-arabic') || document.querySelector('.service-card1-title');
         serviceCard1Title.classList.add('service-card1-title-arabic');
         serviceCard1Title.classList.remove('service-card1-title');
-        serviceCard1Title.innerHTML = "حجز إختياري <img src='ImagesFolder/custom-booking-icon.png' class='custom-booking-icon-arabic'>";
+        serviceCard1Title.innerHTML = "حجز إختياري <img src='ImagesFolder/custom-booking-icon.PNG' class='custom-booking-icon-arabic'>";
 
         const serviceCard1Description = document.querySelector('.service-card1-description-arabic') || document.querySelector('.service-card1-description');
         serviceCard1Description.classList.add('service-card1-description-arabic');
@@ -715,7 +715,7 @@ function currentLanguage(){
         if (serviceCard1Title){
         serviceCard1Title.classList.remove('service-card1-title-arabic');
         serviceCard1Title.classList.add('service-card1-title');
-        serviceCard1Title.innerHTML = '<img src="ImagesFolder/custom-booking-icon.png" class="custom-booking-icon"> Custom Booking';}
+        serviceCard1Title.innerHTML = '<img src="ImagesFolder/custom-booking-icon.PNG" class="custom-booking-icon"> Custom Booking';}
 
         const serviceCard1Description = document.querySelector('.service-card1-description-arabic');
         if (serviceCard1Description){
@@ -1185,7 +1185,7 @@ function switchLanguage(){
         const serviceCard1Title = document.querySelector('.service-card1-title');
         serviceCard1Title.classList.remove('service-card1-title');
         serviceCard1Title.classList.add('service-card1-title-arabic');
-        serviceCard1Title.innerHTML = "حجز إختياري <img src='ImagesFolder/custom-booking-icon.png' class='custom-booking-icon-arabic'>";
+        serviceCard1Title.innerHTML = "حجز إختياري <img src='ImagesFolder/custom-booking-icon.PNG' class='custom-booking-icon-arabic'>";
 
         const serviceCard1Description = document.querySelector('.service-card1-description');
         serviceCard1Description.classList.remove('service-card1-description');
@@ -1572,7 +1572,7 @@ function switchLanguage(){
         if (serviceCard1Title){
         serviceCard1Title.classList.remove('service-card1-title-arabic');
         serviceCard1Title.classList.add('service-card1-title');
-        serviceCard1Title.innerHTML = '<img src="ImagesFolder/custom-booking-icon.png" class="custom-booking-icon"> Custom Booking';}
+        serviceCard1Title.innerHTML = '<img src="ImagesFolder/custom-booking-icon.PNG" class="custom-booking-icon"> Custom Booking';}
 
         const serviceCard1Description = document.querySelector('.service-card1-description-arabic');
         if (serviceCard1Description){
