@@ -752,6 +752,8 @@ function currentLanguage(){
 
     let languageStored = JSON.parse(localStorage.getItem('previousLanguage')) || 'English';
 
+    alert(languageStored)
+
     if (languageStored =='Arabic') {
 
         console.log('English is current, now switching to Arabic');
@@ -1349,3 +1351,4 @@ function switchLanguage(){
 
 
 </script>
+
