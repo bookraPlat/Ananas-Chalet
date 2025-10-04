@@ -1104,6 +1104,8 @@ justify-content: center;
 .gallery-container-header{
     box-sizing: border-box;
     margin-bottom: clamp(0px , 4.41860465vw , 22.402px);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -1131,6 +1133,7 @@ justify-content: center;
     font-size: clamp(0px, 3.25581395vw, 16.507px);
     font-weight:bold;
     justify-self: center;
+    align-self: flex-end;
 }
 
 .gallery-container-header p {
