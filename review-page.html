@@ -730,14 +730,7 @@ countDownLanguage();
         serviceElements.RCTA.style.fontFamily = 'Inter';
 
 
-        language = 'English';
-        console.log('Switched Language to English');
 
-        localStorage.setItem('previousLanguage', JSON.stringify(language));
-
-
-
-        console.log('English is the current language');
 
 
 
@@ -752,7 +745,6 @@ function currentLanguage(){
 
     let languageStored = JSON.parse(localStorage.getItem('previousLanguage')) || 'English';
 
-    alert('This is the saved Language' + JSON.parse(localStorage.getItem('previousLanguage')));
 
     if (languageStored =='Arabic') {
 
@@ -1351,6 +1343,7 @@ function switchLanguage(){
 
 
 </script>
+
 
 
 
