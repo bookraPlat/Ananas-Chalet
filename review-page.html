@@ -526,7 +526,7 @@ function countDownLanguage() {
   
   const countdownElement = document.querySelector('.countdown');
 
-  if(countdownElement){
+  if (countdownElement){
   // Clear previous countdown display to avoid overlap or lag
   countdownElement.innerText = '';
 
@@ -595,7 +595,7 @@ function countDownLanguage() {
 
   // Restart interval and store its ID
   countdownTimer = setInterval(updateCountdown, 1000);
-}
+}}
 
 // Example call to initialize the countdown based on current language
 countDownLanguage();
@@ -603,7 +603,7 @@ countDownLanguage();
 // If you switch language dynamically, call countDownLanguage() again
 // to reset the countdown and prevent overlapping intervals.
 
-};
+
 
 
         const serviceNO = localStorage.getItem('serviceNo');
@@ -1346,6 +1346,4 @@ function switchLanguage(){
 
 
 </script>
-
-
 
