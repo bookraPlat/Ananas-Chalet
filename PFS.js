@@ -1889,7 +1889,6 @@ function switchLanguage(){
         console.log('Arabic one sir:'+arabicSidebar.classList);
     }   
 
-    alert(JSON.parse(localStorage.getItem('previousLanguage'))) 
 };
     
 
@@ -2355,6 +2354,7 @@ function someConditionIsTrue() {
 // Example usage (assuming someVariable is a global variable)
 let oldValue = 0;
 let someVariable = 1;
+
 
 
 
