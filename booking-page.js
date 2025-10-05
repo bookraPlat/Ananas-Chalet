@@ -320,7 +320,7 @@ function currentLanguage() {
         aOFOPtion8.innerText = '8 ليالي';
 
         const aOFDropDown9 = document.querySelector('.amount-of-nights-option9');
-        const aOFOPtion9 = aOFDropDown5.querySelector('.option1-items-container');
+        const aOFOPtion9 = aOFDropDown9.querySelector('.option1-items-container');
         aOFOPtion9.innerText = '9 ليالي';
 
         const aOFDropDown10 = document.querySelector('.amount-of-nights-option10');
@@ -2756,3 +2756,10 @@ currentLanguage();
 
 
     
+
+
+
+
+
+    
+
