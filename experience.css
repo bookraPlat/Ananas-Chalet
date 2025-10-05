@@ -21,13 +21,12 @@ body{
     z-index: -1111;
     }
 
-    .arabic-text{
-        direction: rtl;
-        unicode-bidi: bidi-override;
-        line-height: 1;
-        justify-self: flex-end;
-        align-self: flex-end;
-    }
+.arabic-text {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    line-height: 1;
+    justify-self: flex-end;
+}
 
     .english-text{
         direction: ltr;
@@ -1605,13 +1604,11 @@ p.gallery-category-active{
     box-sizing: border-box;
 }
 
-.footer-section-container{
-    width: 86.5116279vw;
+.footer-section-container {
+    width: 86.5116vw;
     max-width: 438.614px;
-    height: 114.883721vw;
+    height: 114.884vw;
     max-height: 582.46px;
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-title{
@@ -1627,8 +1624,8 @@ p.gallery-category-active{
     line-height: 1;
 }
 
-.footer-visual-explanation{
-    width: 86.5116279vw;
+.footer-visual-explanation {
+    width: 86.5116vw;
     max-width: 438.614px;
     display: flex;
     flex-direction: row;
@@ -1708,15 +1705,17 @@ p.gallery-category-active{
     max-height: 14.15px;
 }
 
-.footer-step1 , .footer-step2 , .footer-step3{
-    width: 27.4418605vw;
+
+.footer-step1, .footer-step2, .footer-step3 {
+
+    width: 27.4419vw;
     max-width: 139.18px;
-    height: 27.4418605vw;
+    height: 27.4419vw;
     max-height: 139.18px;
-    padding-bottom:clamp(0px , 1.62790698vw, 8.26px);
-    padding-top: clamp(0px , 1.62790698vw, 8.26px);
-    padding-left: clamp(0px ,2.09302326vw , 10.61px);
-    padding-right: clamp(0px ,2.09302326vw , 10.61px);
+    padding-bottom: clamp(0px, 1.62791vw, 8.26px);
+    padding-top: clamp(0px, 1.62791vw, 8.26px);
+    padding-left: clamp(0px, 2.09302vw, 10.61px);
+    padding-right: clamp(0px, 2.09302vw, 10.61px);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -1724,15 +1723,17 @@ p.gallery-category-active{
     justify-content: center;
 }
 
-.footer-step1-items-container , .footer-step2-items-container , .footer-step3-items-container{
+
+.footer-step1-items-container, .footer-step2-items-container, .footer-step3-items-container {
     width: 100%;
 }
 
-.step1-number , .step2-number , .step3-number{
-    font-size: clamp(0px , 1.86046512vw , 9.43px);
-    font-weight: bold;    
+.step1-number, .step2-number, .step3-number {
+    font-size: clamp(0px, 1.86047vw, 9.43px);
+    font-weight: bold;
     justify-self: flex-start;
 }
+
 
 .step1-image-container , .step2-image-container , .step3-image-container{
     width: 100%;
@@ -1764,24 +1765,27 @@ p.gallery-category-active{
     max-width: 53.07px;
 }
 
-.step1-title , .step2-title , .step3-title{
-    font-size: clamp(0px , 1.86046512vw , 9.43px );
+.step1-title, .step2-title, .step3-title {
+    font-size: clamp(0px, 1.86047vw, 9.43px);
     font-weight: bold;
-    height: 3vw ;
+    height: 3vw;
     max-height: 15.21px;
-    margin-top: clamp(0px ,1vw , 5.07px);
+    margin-top: clamp(0px, 1vw, 5.07px);
     display: flex;
     flex-direction: row;
 }
 
-.step1-description , .step2-description ,.step3-description  {
-    font-size: clamp(0px , 1.86046512vw , 9.43px);
+
+.step1-description, .step2-description, .step3-description {
+    font-size: clamp(0px, 1.86047vw, 9.43px);
     font-weight: 100;
-    line-height: clamp(0px, 2.2vw, 11.154px);    height: 4.73vw;
+    line-height: clamp(0px, 2.2vw, 11.154px);
+    height: 4.73vw;
     max-height: 24px;
 }
 
-.step1-text , .step2-text , .step3-text{
+.step1-text, .step2-text, .step3-text {
     display: flex;
     flex-direction: column;
 }
+
