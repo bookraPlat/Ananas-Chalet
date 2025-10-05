@@ -554,7 +554,7 @@ function currentLanguage(){
         step3DescriptionA.classList.add('arabic-text');
 
         const footerDescriptionA = document.querySelector('.footer-visual-explanation-description');
-        footerDescriptionA.innerHTML = 'من خلال هذا الزر ستبدأ بالخطوى الأولى . إنضم لبدايات أغسطس!';
+        footerDescriptionA.innerHTML = 'من خلال هذا الزر ستبدأ بالخطوى الأولى . إنضم لحجوزات أكتوبر!';
         footerDescriptionA.classList.add('arabic-text');
 
         
@@ -1413,7 +1413,7 @@ function switchLanguage(){
         step3DescriptionA.classList.add('arabic-text');
 
         const footerDescriptionA = document.querySelector('.footer-visual-explanation-description');
-        footerDescriptionA.innerHTML = 'من خلال هذا الزر ستبدأ بالخطوى الأولى . إنضم لبدايات أغسطس!';
+        footerDescriptionA.innerHTML = 'من خلال هذا الزر ستبدأ بالخطوى الأولى . إنضم لحجوزات أكتوبر!';
         footerDescriptionA.classList.add('arabic-text');
 
         
@@ -1427,6 +1427,8 @@ function switchLanguage(){
         console.log('Switched Language to Arabic');
 
         localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+
    
         retreiveCurrentLanguage();
         console.log('This is the the landmark')
@@ -1887,6 +1889,7 @@ function switchLanguage(){
         console.log('Arabic one sir:'+arabicSidebar.classList);
     }   
 
+    alert(JSON.parse(localStorage.getItem('previousLanguage'))) 
 };
     
 
@@ -2352,6 +2355,17 @@ function someConditionIsTrue() {
 // Example usage (assuming someVariable is a global variable)
 let oldValue = 0;
 let someVariable = 1;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
