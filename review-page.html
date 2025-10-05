@@ -529,7 +529,7 @@ function countDownLanguage() {
   if(countdownElement){
   // Clear previous countdown display to avoid overlap or lag
   countdownElement.innerText = '';
-};
+
   // Determine the correct class and swap if needed
   if (language === 'ع') {
     if (countdownElement.classList.contains('countdown-en')) {
@@ -603,7 +603,7 @@ countDownLanguage();
 // If you switch language dynamically, call countDownLanguage() again
 // to reset the countdown and prevent overlapping intervals.
 
-
+};
 
 
         const serviceNO = localStorage.getItem('serviceNo');
@@ -1346,7 +1346,6 @@ function switchLanguage(){
 
 
 </script>
-
 
 
 
