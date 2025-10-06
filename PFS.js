@@ -362,7 +362,7 @@ function currentLanguage(){
         
         const counterSectionTitleA = document.querySelector('.experience-introduction-title');
         counterSectionTitleA.classList.remove('experience-introduction-title');
-        counterSectionTitleA.classList.add('experience-introduction-title-');
+        counterSectionTitleA.classList.add('experience-introduction-title-arabic');
         counterSectionTitleA.innerHTML = 'التفاصيل الرئيسية';
 
         const counterSectionDescriptionA = document.querySelector('.experience-introduction-description');
@@ -2354,7 +2354,6 @@ function someConditionIsTrue() {
 // Example usage (assuming someVariable is a global variable)
 let oldValue = 0;
 let someVariable = 1;
-
 
 
 
