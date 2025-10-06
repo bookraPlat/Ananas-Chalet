@@ -1011,6 +1011,7 @@ justify-content: center;
 }
 
 .banner-square p{
+    font-size: clamp(0px, 2vw, 11px);
 }
 
 .banner-item-image1{
@@ -1020,7 +1021,7 @@ justify-content: center;
 
 .banner-item-image2{
     width: 5vw;
-    max-width: 25.35 pixels;
+    max-width: 25.35px;
 }
 
 .banner-item-image3{
@@ -1788,4 +1789,5 @@ p.gallery-category-active{
     display: flex;
     flex-direction: column;
 }
+
 
