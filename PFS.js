@@ -373,7 +373,7 @@ function currentLanguage(){
         const counterCard1NumberA = document.querySelector('.counter-card1-number');
         counterCard1NumberA.classList.remove('counter-card1-number');
         counterCard1NumberA.classList.add('counter-card1-number-arabic');
-        counterCard1NumberA.innerHTML = '+6';
+        counterCard1NumberA.innerHTML = '+5';
         
         const counterCard1TitleA = document.querySelector('.counter-card1-title');
         counterCard1TitleA.classList.remove('counter-card1-title');
@@ -383,7 +383,7 @@ function currentLanguage(){
         const counterCard1DescriptionA = document.querySelector('.counter-card1-description');
         counterCard1DescriptionA.classList.remove('counter-card1-description');
         counterCard1DescriptionA.classList.add('counter-card1-description-arabic');
-        counterCard1DescriptionA.innerHTML = "<p class = 'cc1al1'>لإرضاء عدد الحاضرين</p>  <p class = 'cc1al2' >6 غرف ماستر و غرفة للخادمة</p>";
+        counterCard1DescriptionA.innerHTML = "<p class = 'cc1al1'>لإرضاء عدد الحاضرين</p>  <p class = 'cc1al2' >5 غرف ماستر و غرفة للخادمة</p>";
         
         const counterCard2NumberA = document.querySelector('.counter-card2-number');
         counterCard2NumberA.classList.remove('counter-card2-number');
@@ -440,7 +440,7 @@ function currentLanguage(){
         bannerItem3Title.innerText = "ديوانية مع حمامها";
 
         const bannerItem4Title = document.querySelector('.banner-item4-title');
-        bannerItem4Title.innerText = "6 غرف ماستر";
+        bannerItem4Title.innerText = "5 غرف ماستر";
 
         const bannerItem4Title2 = document.querySelector('.banner-item4-title2');
         bannerItem4Title2.innerText = " + غرفة خادمة";
@@ -449,7 +449,7 @@ function currentLanguage(){
         bannerItem5Title.innerText = 'حمام سباحه';
 
         const bannerItem5Title2 = document.querySelector('.banner-item5-title2');
-        bannerItem5Title2.innerText = "مع دورة مياه"
+        bannerItem5Title2.innerText = "مع دورة مياه";
 
         const bannerItem6Title = document.querySelector('.banner-item6-title');
         bannerItem6Title.innerText = 'مصعد فعال';
@@ -779,7 +779,7 @@ function currentLanguage(){
         if (counterCard1Number){
         counterCard1Number.classList.add('counter-card1-number');
         counterCard1Number.classList.remove('counter-card1-number-arabic');
-        counterCard1Number.innerHTML = '+6';}
+        counterCard1Number.innerHTML = '+5';}
         
         const counterCard1Title = document.querySelector('.counter-card1-title-arabic');
         if (counterCard1Title){
@@ -791,7 +791,7 @@ function currentLanguage(){
         if (counterCard1Description){
         counterCard1Description.classList.add('counter-card1-description');
         counterCard1Description.classList.remove('counter-card1-description-arabic');
-        counterCard1Description.innerHTML = "6 bed rooms all master + maid master room.";}
+        counterCard1Description.innerHTML = "5 bed rooms all master + maid master room.";}
         
         const counterCard2Number = document.querySelector('.counter-card2-number-arabic');
         if (counterCard2Number){
@@ -1232,7 +1232,7 @@ function switchLanguage(){
         const counterCard1NumberA = document.querySelector('.counter-card1-number');
         counterCard1NumberA.classList.remove('counter-card1-number');
         counterCard1NumberA.classList.add('counter-card1-number-arabic');
-        counterCard1NumberA.innerHTML = '+6';
+        counterCard1NumberA.innerHTML = '+5';
         
         const counterCard1TitleA = document.querySelector('.counter-card1-title');
         counterCard1TitleA.classList.remove('counter-card1-title');
@@ -1242,7 +1242,7 @@ function switchLanguage(){
         const counterCard1DescriptionA = document.querySelector('.counter-card1-description');
         counterCard1DescriptionA.classList.remove('counter-card1-description');
         counterCard1DescriptionA.classList.add('counter-card1-description-arabic');
-        counterCard1DescriptionA.innerHTML = "<p class = 'cc1al1'>لإرضاء عدد الحاضرين</p>  <p class = 'cc1al2' >6 غرف ماستر و غرفة للخادمة</p>";
+        counterCard1DescriptionA.innerHTML = "<p class = 'cc1al1'>لإرضاء عدد الحاضرين</p>  <p class = 'cc1al2' >5 غرف ماستر و غرفة للخادمة</p>";
         
         const counterCard2NumberA = document.querySelector('.counter-card2-number');
         counterCard2NumberA.classList.remove('counter-card2-number');
@@ -1284,7 +1284,7 @@ function switchLanguage(){
         bannerItem3Title.innerText = "ديوانية مع حمامها";
 
         const bannerItem4Title = document.querySelector('.banner-item4-title');
-        bannerItem4Title.innerText = "6 غرف ماستر";
+        bannerItem4Title.innerText = "5 غرف ماستر";
 
         const bannerItem4Title2 = document.querySelector('.banner-item4-title2');
         bannerItem4Title2.innerText = " + غرفة خادمة";
@@ -1293,7 +1293,7 @@ function switchLanguage(){
         bannerItem5Title.innerText = 'حمام سباحه';
 
         const bannerItem5Title2 = document.querySelector('.banner-item5-title2');
-        bannerItem5Title2.innerText = "مع دورة مياه"
+        bannerItem5Title2.innerText = "مع دورة مياه";
 
         const bannerItem6Title = document.querySelector('.banner-item6-title');
         bannerItem6Title.innerText = 'مصعد فعال';
@@ -2354,6 +2354,21 @@ function someConditionIsTrue() {
 // Example usage (assuming someVariable is a global variable)
 let oldValue = 0;
 let someVariable = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
