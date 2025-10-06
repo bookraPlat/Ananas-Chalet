@@ -1295,7 +1295,7 @@ function switchLanguage(){
         const bannerItem5Title2 = document.querySelector('.banner-item5-title2');
         bannerItem5Title2.innerText = "مع دورة مياه"
 
-        const bannerItem6Title = document.querySelector('.banner-item5-title');
+        const bannerItem6Title = document.querySelector('.banner-item6-title');
         bannerItem6Title.innerText = 'مصعد فعال';
 
         const bannerItem7Title = document.querySelector('.banner-item7-title');
@@ -2354,10 +2354,6 @@ function someConditionIsTrue() {
 // Example usage (assuming someVariable is a global variable)
 let oldValue = 0;
 let someVariable = 1;
-
-
-
-
 
 
 
