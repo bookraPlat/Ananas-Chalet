@@ -1,3 +1,237 @@
+
+
+const today = new Date();
+const theCurrentDay = today.getDate();
+const currentMonth = today.toLocaleString('default', { month: 'long' });
+const currentYear = today.getFullYear();
+
+document.querySelectorAll('.days').forEach(day => {
+  const dayMonth = day.getAttribute('data-month');
+  const dayYear = parseInt(day.closest('.month-container').querySelector('.year').textContent);
+  const dayNumber = parseInt(day.querySelector('.dom').textContent);
+  
+  if (dayYear === currentYear && dayMonth === currentMonth && dayNumber < theCurrentDay) {
+    day.remove();
+  }
+});
+
+function addFutureDays() {
+  const today = new Date();
+  const startDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const daysToAdd = 365; // or 366 for lunar years
+
+  // Initialize createdMonths with existing months
+  const createdMonths = {};
+  document.querySelectorAll('.month-container').forEach(container => {
+    const header = container.querySelector('.bcb-header');
+    const month = header.querySelector('.month').textContent;
+    const year = header.querySelector('.year').textContent;
+    const key = `${month}_${year}`;
+    createdMonths[key] = container;
+  });
+
+  for (let i = 0; i < daysToAdd; i++) {
+    const futureDate = new Date(startDate);
+    futureDate.setDate(startDate.getDate() + i);
+
+    const day = futureDate.getDate();
+    const monthIndex = futureDate.getMonth();
+    const year = futureDate.getFullYear();
+
+    const monthName = futureDate.toLocaleString('default', { month: 'long' });
+    const dayName = futureDate.toLocaleString('default', { weekday: 'long' });
+    const yearStr = year.toString();
+    // Check if this month container already exists
+    const monthKey = `${monthName}_${year}`;
+    let monthContainerDiv = createdMonths[monthKey];
+
+    if (!monthContainerDiv) {
+      // Create new month container if it doesn't exist
+      monthContainerDiv = createMonthContainer(monthName, year);
+      document.querySelector('.booking-calendar-body').appendChild(monthContainerDiv);
+      createdMonths[monthKey] = monthContainerDiv;
+    }
+
+    // Create day element
+    const dayDiv = document.createElement('div');
+    dayDiv.className = `days ${isWeekend(dayName) ? 'weekend' : 'weekday'}`;
+    dayDiv.setAttribute('data-month', monthName);
+    dayDiv.setAttribute('data-day', dayName);
+    dayDiv.setAttribute('data-year', year);
+
+    // Inner elements
+    const dowDiv = document.createElement('div');
+    dowDiv.className = 'dow';
+    dowDiv.textContent = dayName;
+
+    const domDiv = document.createElement('div');
+    domDiv.className = 'dom';
+    domDiv.textContent = day;
+
+    const hr = document.createElement('hr');
+    hr.className = 'day-category';
+
+    dayDiv.appendChild(dowDiv);
+    dayDiv.appendChild(domDiv);
+    dayDiv.appendChild(hr);
+
+    // Append to the existing month container
+    const bcbBody = monthContainerDiv.querySelector('.bcb-body');
+    bcbBody.appendChild(dayDiv);
+  }
+
+  // Helper functions
+  function isWeekend(dayName) {
+    return ['Thursday' , 'Friday' , 'Saturday'].includes(dayName);
+  }
+
+  function createMonthContainer(month, year) {
+    const container = document.createElement('div');
+    container.className = 'month-container';
+
+    const headerDiv = document.createElement('div');
+    headerDiv.className = `bcb-header ${month}`;
+
+    const monthP = document.createElement('p');
+    monthP.className = 'month';
+    monthP.textContent = month;
+
+    const yearP = document.createElement('p');
+    yearP.className = 'year';
+    yearP.textContent = year;
+
+    headerDiv.appendChild(monthP);
+    headerDiv.appendChild(yearP);
+
+    const bodyDiv = document.createElement('div');
+    bodyDiv.className = `bcb-body ${month}`;
+
+    container.appendChild(headerDiv);
+    container.appendChild(bodyDiv);
+
+    return container;
+  }
+}
+
+// Call the function to add days
+addFutureDays();
+
+
+// Function to log inner HTML of all .day elements in the DOM
+function logAllDaysInnerHTML() {
+  const days = document.querySelectorAll('.day');
+  days.forEach((day, index) => {
+    console.log(`.day element ${index + 1}: ${day.innerHTML}`);
+  });
+}
+
+// Add event listener for scroll event
+window.addEventListener('scroll', () => {
+  logAllDaysInnerHTML();
+});
+// ==================== Header animation and viewport detection ====================
+
+// Select the main calendar header elements
+const calendarHeaderMonth = document.querySelector('.CH-month');
+const calendarHeaderYear = document.querySelector('.CH-year');
+
+// Function to animate header update
+function animateHeaderUpdate(newMonth, newYear) {
+  // Animate slide up
+  calendarHeaderMonth.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+  calendarHeaderYear.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+  calendarHeaderMonth.style.transform = 'translateY(-20px)';
+  calendarHeaderYear.style.transform = 'translateY(-20px)';
+  calendarHeaderMonth.style.opacity = '0';
+  calendarHeaderYear.style.opacity = '0';
+
+  setTimeout(() => {
+    // Update text
+    calendarHeaderMonth.textContent = newMonth;
+    calendarHeaderYear.textContent = newYear;
+
+    // Animate slide down and opacity back
+    calendarHeaderMonth.style.transform = 'translateY(0)';
+    calendarHeaderYear.style.transform = 'translateY(0)';
+    calendarHeaderMonth.style.opacity = '1';
+    calendarHeaderYear.style.opacity = '1';
+  }, 300);
+}
+
+// Collect all `.month-container` elements
+const monthContainers = Array.from(document.querySelectorAll('.month-container'));
+
+// Function to get number of days in container
+function getDaysCount(container) {
+  return container.querySelectorAll('.days').length;
+}
+
+// Create Intersection Observer for month containers
+const containersObserver = new IntersectionObserver((entries) => {
+  // Track the container with the most days in viewport
+  let maxDaysCount = -1;
+  let containerWithMostDays = null;
+
+  entries.forEach(entry => {
+    const container = entry.target;
+
+    if (entry.isIntersecting) {
+      // When container enters viewport:
+      // Find its header (assuming it's `.bcb-header` inside container)
+      const header = container.querySelector('.bcb-header');
+      const newMonth = header.querySelector('.month').textContent;
+      const newYear = header.querySelector('.year').textContent;
+
+      // Animate the header update
+      animateHeaderUpdate(newMonth, newYear);
+
+      // Optional: Highlight the active container
+      container.style.transform = 'scale(1) ';
+      container.style.opacity = '1';
+            // Animate opacity to 0 before updating
+      header.style.transition = 'opacity 0.3s ease';
+      header.style.opacity = '0';
+
+
+
+      // Dim other containers
+      document.querySelectorAll('.month-container').forEach(c => {
+        if (c !== container) {
+          c.style.transform = 'scale(0.7) ';
+          c.style.opacity = '0.5';
+          // Animate opacity to 0 before updating
+          c.querySelector('.bcb-header').style.transition = 'opacity 0.3s ease';
+          c.querySelector('.bcb-header').style.opacity = '1';
+        }
+      });
+    }
+
+    // Track maximum days in viewport
+    const currentDaysInViewport = getDaysCount(container);
+    if (currentDaysInViewport > maxDaysCount) {
+      maxDaysCount = currentDaysInViewport;
+      containerWithMostDays = container;
+    }
+  });
+
+  // Log the container with the most days
+  if (containerWithMostDays) {
+    const header = containerWithMostDays.querySelector('.bcb-header');
+    const month = header.querySelector('.month').textContent;
+    console.log(`Month with most days in viewport: ${month}`);
+  }
+}, {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2
+});
+
+// Observe all month containers
+monthContainers.forEach(container => {
+  containersObserver.observe(container);
+});
+
 console.log( 'This is the message: ' + localStorage.getItem('previousLanguage'));
 
 function sendMessage() {
@@ -1265,17 +1499,17 @@ function currentDate(){    const currentDate = new Date();
 
     if (day == 1 || day == 31){
         const superscript = 'st';
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} ${year}</div>`;
 
       }else if (day == 2){
         const superscript = 'nd';
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} ${year}</div>`;
       }else if(day == 3){
         const superscript = 'rd'
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} ${year}</div>`;
       }else {
         const superscript = 'th'
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${monthName} ${day}${superscript} ${year}</div>`;
       };
 
     }
@@ -1312,25 +1546,26 @@ document.addEventListener('DOMContentLoaded', () => {
   daysElements.forEach(element => {
     element.addEventListener('click', () => {
       // Get the data attributes
+    const year = element.getAttribute('data-year');
       const dayOfWeek = element.getAttribute('data-day');
       const month = element.getAttribute('data-month');
-      const innerText = element.innerText;
+      const innerText = element.querySelector('.dom').innerText;
 
       // Log in the specified format
       const calendarButton = document.querySelector('.booking-calendar-button');
       if (innerText == 1 || innerText == 31){
         const superscript = 'st';
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} ${year}</div>`;
 
       }else if (innerText == 2){
         const superscript = 'nd';
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} ${year}</div>`;
       }else if(innerText == 3){
         const superscript = 'rd'
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} ${year}</div>`;
       }else {
         const superscript = 'th'
-        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} 2025</div>`;
+        calendarButton.innerHTML = `<div class = 'date-text-container'> <strong> </strong> ${month} ${innerText}${superscript} ${year}</div>`;
       };
       const calendarButtonWD = calendarButton.querySelector('strong');
       calendarButtonWD.innerHTML = `${dayOfWeek}`;
@@ -2761,5 +2996,14 @@ currentLanguage();
 
 
 
+
+
     
+
+
+
+
+
+    
+
 
